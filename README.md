@@ -1,6 +1,6 @@
-# ONLV Project - Full-Stack Webapp
+# Ava App - Full-Stack Webapp
 
-> **A comprehensive full-stack application for ONLV (Outline of Services and Performance) file processing, built with modern web technologies.**
+> **A comprehensive full-stack application for construction document processing, built with modern web technologies.**
 
 ---
 
@@ -22,7 +22,7 @@
 
 ## 🎯 Project Overview
 
-The ONLV Project is a sophisticated full-stack web application designed for professional management and processing of ONLV (Outline of Services and Performance) construction documents. It combines a robust Python FastAPI backend with a modern React frontend to provide a seamless user experience for document processing, data management, and advanced file analysis.
+The Ava App is a sophisticated full-stack web application designed for professional management and processing of construction documents. It combines a robust Python FastAPI backend with a modern React frontend to provide a seamless user experience for document processing, data management, and advanced file analysis.
 
 ### What is ONLV?
 

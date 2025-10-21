@@ -1,7 +1,7 @@
 {
-    "name": "onlv-project",
+    "name": "ava-app",
     "version": "1.0.0",
-    "description": "ONLV Project with FastAPI backend and React frontend",
+    "description": "Ava App with FastAPI backend and React frontend",
     "scripts": {
         "build": "cd frontend && npm install && npm run build",
         "heroku-postbuild": "echo 'Starting React build...' && cd frontend && npm install && npm run build && echo 'React build completed!' && ls -la build/"
