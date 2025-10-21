@@ -1,0 +1,46 @@
+{
+    "title": "Custom Positions",
+    "subtitle": "Manage and view all custom ONLV positions",
+    "filters": {
+        "title": "Filters",
+        "entityType": "Entity Type",
+        "lgNumber": "LG Number",
+        "ulgNumber": "ULG Number",
+        "grundtextNumber": "Grundtext Number",
+        "allTypes": "All Types",
+        "placeholderLg": "e.g., 00",
+        "placeholderUlg": "e.g., 11",
+        "placeholderGrundtext": "e.g., 01"
+    },
+    "buttons": {
+        "applyFilters": "Apply Filters",
+        "clearFilters": "Clear Filters",
+        "refresh": "Refresh"
+    },
+    "table": {
+        "fullNr": "Full NR",
+        "shortText": "Short Text",
+        "entityType": "Entity Type",
+        "lgUlgGt": "LG / ULG / GT",
+        "createdAt": "Created At",
+        "actions": "Actions"
+    },
+    "entityTypes": {
+        "Grundtext": "Grundtext",
+        "Folgeposition": "Folgeposition",
+        "LG": "LG",
+        "ULG": "ULG",
+        "UngeteiltePosition": "Ungeteilte Position"
+    },
+    "messages": {
+        "loading": "Loading custom positions...",
+        "positionsFound": "custom position(s) found",
+        "noPositions": "No custom positions found",
+        "noPositionsDescription": "Try adjusting your filters or create a new custom position.",
+        "deleteConfirm": "Are you sure you want to delete custom position",
+        "deleteSuccess": "deleted successfully",
+        "deleteFailed": "Failed to delete position",
+        "deleteError": "Error deleting position",
+        "deleting": "Deleting..."
+    }
+}

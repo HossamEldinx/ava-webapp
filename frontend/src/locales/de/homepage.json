@@ -1,0 +1,20 @@
+{
+    "title": "Automatisierte LV-Erstellung mit KI & BIM",
+    "subtitle": "Dein persönlicher KI-Assistent bei der Erstellung von Leistungsverzeichnissen",
+    "boq": {
+        "title": "Leistungsverzeichnis",
+        "description": "Verwalten und analysieren Sie das Leistungsverzeichnis Ihres Projekts mit Leichtigkeit. Laden Sie alle Ihre LV-Dateien an einem Ort hoch, verfolgen und verarbeiten Sie sie.",
+        "button": "Zur LV-Seite"
+    },
+    "elements": {
+        "title": "Elementverwaltung",
+        "description": "Organisieren und verwalten Sie alle Ihre Bauelemente, einschließlich ihrer Eigenschaften und zugehörigen Vorschriften.",
+        "button": "Zu den Elementen"
+    },
+    "createPosition": {
+        "title": "Neue Position erstellen",
+        "description": "Fügen Sie eine neue Position mit detaillierten Eigenschaften und Attributen hinzu.",
+        "button": "Position erstellen",
+        "seeAllButton": "Alle anzeigen"
+    }
+}

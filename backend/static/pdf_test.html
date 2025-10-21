@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Processing Status</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .status-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            background: #f9f9f9;
+        }
+        .status-pending { border-left: 4px solid #ffa500; }
+        .status-processing { border-left: 4px solid #007bff; }
+        .status-completed { border-left: 4px solid #28a745; }
+        .status-failed { border-left: 4px solid #dc3545; }
+        .upload-form {
+            border: 2px dashed #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .btn {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+        .progress {
+            background: #e9ecef;
+            border-radius: 4px;
+            height: 20px;
+            margin: 10px 0;
+        }
+        .progress-bar {
+            background: #007bff;
+            height: 100%;
+            border-radius: 4px;
+            transition: width 0.3s ease;
+        }
+        #taskStatus {
+            margin-top: 20px;
+        }
+        pre {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PDF Processing with Async Support</h1>
+        <p>This page demonstrates the new async PDF processing that prevents Heroku timeouts.</p>
+        
+        <div class="upload-form">
+            <h3>Upload PDF for Processing</h3>
+            <form id="uploadForm">
+                <input type="file" id="pdfFile" accept=".pdf" required><br><br>
+                <input type="text" id="userId" placeholder="User ID" value="test-user-123" required><br><br>
+                <input type="text" id="message" placeholder="Message" value="Process this PDF and extract walls" required><br><br>
+                <input type="text" id="projectId" placeholder="Project ID (optional)"><br><br>
+                <input type="text" id="boqId" placeholder="BOQ ID (optional)"><br><br>
+                <button type="submit" class="btn">Upload & Process</button>
+            </form>
+        </div>
+
+        <div id="taskStatus"></div>
+
+        <div style="margin-top: 30px;">
+            <h3>Check Existing Task Status</h3>
+            <input type="text" id="taskIdInput" placeholder="Enter Task ID">
+            <button onclick="checkTaskStatus()" class="btn">Check Status</button>
+            <button onclick="integrateCompletedTask()" class="btn" style="background: #28a745;">Integrate into RAG Workflow</button>
+        </div>
+
+        <div style="margin-top: 30px;">
+            <h3>RAG Workflow Integration</h3>
+            <p>Once your PDF is processed, you can integrate it into the RAG workflow for step 5 (quantity calculations).</p>
+            <button onclick="getCompletedTasks()" class="btn">Get My Completed Tasks</button>
+            <div id="completedTasksList"></div>
+        </div>
+
+        <div id="logs" style="margin-top: 30px;">
+            <h3>Processing Logs</h3>
+            <pre id="logContent"></pre>
+        </div>
+    </div>
+
+    <script>
+        let currentTaskId = null;
+        let statusCheckInterval = null;
+
+        function log(message) {
+            const logContent = document.getElementById('logContent');
+            const timestamp = new Date().toLocaleTimeString();
+            logContent.textContent += `[${timestamp}] ${message}\n`;
+            logContent.scrollTop = logContent.scrollHeight;
+        }
+
+        document.getElementById('uploadForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData();
+            formData.append('pdf_file', document.getElementById('pdfFile').files[0]);
+            formData.append('user_id', document.getElementById('userId').value);
+            formData.append('message', document.getElementById('message').value);
+            
+            const projectId = document.getElementById('projectId').value;
+            if (projectId) formData.append('project_id', projectId);
+            
+            const boqId = document.getElementById('boqId').value;
+            if (boqId) formData.append('boq_id', boqId);
+
+            try {
+                log('Starting PDF upload...');
+                const response = await fetch('/api/rag-chat/chat-with-file', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const result = await response.json();
+                
+                if (result.success) {
+                    currentTaskId = result.task_id;
+                    log(`Upload successful! Task ID: ${currentTaskId}`);
+                    document.getElementById('taskIdInput').value = currentTaskId;
+                    startStatusPolling(currentTaskId);
+                } else {
+                    log(`Upload failed: ${JSON.stringify(result)}`);
+                }
+            } catch (error) {
+                log(`Upload error: ${error.message}`);
+            }
+        });
+
+        function startStatusPolling(taskId) {
+            if (statusCheckInterval) {
+                clearInterval(statusCheckInterval);
+            }
+
+            statusCheckInterval = setInterval(() => {
+                checkTaskStatusById(taskId);
+            }, 2000); // Check every 2 seconds
+
+            // Also check immediately
+            checkTaskStatusById(taskId);
+        }
+
+        function checkTaskStatus() {
+            const taskId = document.getElementById('taskIdInput').value;
+            if (taskId) {
+                checkTaskStatusById(taskId);
+            }
+        }
+
+        async function checkTaskStatusById(taskId) {
+            try {
+                const response = await fetch(`/api/rag-chat/task-status/${taskId}`);
+                const result = await response.json();
+                
+                updateStatusDisplay(result);
+                
+                if (result.status === 'completed' || result.status === 'failed') {
+                    if (statusCheckInterval) {
+                        clearInterval(statusCheckInterval);
+                        statusCheckInterval = null;
+                    }
+                    log(`Task ${taskId} finished with status: ${result.status}`);
+                }
+            } catch (error) {
+                log(`Status check error: ${error.message}`);
+            }
+        }
+
+        function updateStatusDisplay(taskData) {
+            const statusDiv = document.getElementById('taskStatus');
+            
+            if (!taskData.success) {
+                statusDiv.innerHTML = `<div class="status-card status-failed">
+                    <h3>Task Not Found</h3>
+                    <p>${taskData.error}</p>
+                </div>`;
+                return;
+            }
+
+            const statusClass = `status-${taskData.status}`;
+            const progress = getProgressPercentage(taskData.status);
+            
+            let resultHtml = '';
+            if (taskData.status === 'completed' && taskData.result) {
+                const wallCount = taskData.result.enriched_walls ? taskData.result.enriched_walls.length : 0;
+                resultHtml = `
+                    <h4>Processing Results:</h4>
+                    <p><strong>Walls found:</strong> ${wallCount}</p>
+                    <p><strong>File ID:</strong> ${taskData.result.file_id || 'N/A'}</p>
+                    <details>
+                        <summary>View raw result</summary>
+                        <pre>${JSON.stringify(taskData.result, null, 2)}</pre>
+                    </details>
+                `;
+            } else if (taskData.status === 'failed') {
+                resultHtml = `
+                    <h4>Error:</h4>
+                    <p style="color: red;">${taskData.error}</p>
+                `;
+            }
+
+            statusDiv.innerHTML = `
+                <div class="status-card ${statusClass}">
+                    <h3>Task Status: ${taskData.status.toUpperCase()}</h3>
+                    <p><strong>Task ID:</strong> ${taskData.task_id}</p>
+                    <p><strong>File:</strong> ${taskData.filename}</p>
+                    <p><strong>Progress:</strong> ${taskData.progress}</p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: ${progress}%"></div>
+                    </div>
+                    <p><strong>Created:</strong> ${new Date(taskData.created_at).toLocaleString()}</p>
+                    ${taskData.started_at ? `<p><strong>Started:</strong> ${new Date(taskData.started_at).toLocaleString()}</p>` : ''}
+                    ${taskData.completed_at ? `<p><strong>Completed:</strong> ${new Date(taskData.completed_at).toLocaleString()}</p>` : ''}
+                    ${resultHtml}
+                </div>
+            `;
+        }
+
+        function getProgressPercentage(status) {
+            switch (status) {
+                case 'pending': return 10;
+                case 'processing': return 50;
+                case 'completed': return 100;
+                case 'failed': return 100;
+                default: return 0;
+            }
+        }
+
+        async function integrateCompletedTask() {
+            const taskId = document.getElementById('taskIdInput').value;
+            const userId = document.getElementById('userId').value;
+            
+            if (!taskId || !userId) {
+                log('Please enter both Task ID and User ID');
+                return;
+            }
+
+            try {
+                log(`Integrating completed task ${taskId} into RAG workflow...`);
+                
+                const formData = new FormData();
+                formData.append('task_id', taskId);
+                formData.append('user_id', userId);
+
+                const response = await fetch('/api/rag-chat/integrate-completed-task', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const result = await response.json();
+                
+                if (result.success) {
+                    log(`Integration successful! Step 4 completed: ${result.step_four_completed}`);
+                    log(`Ready for step 5: ${result.ready_for_step_five}`);
+                    log(`AI Response: ${result.ai_response}`);
+                } else {
+                    log(`Integration failed: ${result.detail || result.error}`);
+                }
+            } catch (error) {
+                log(`Integration error: ${error.message}`);
+            }
+        }
+
+        async function getCompletedTasks() {
+            const userId = document.getElementById('userId').value;
+            
+            if (!userId) {
+                log('Please enter User ID');
+                return;
+            }
+
+            try {
+                log(`Getting completed tasks for user ${userId}...`);
+                
+                const response = await fetch(`/api/rag-chat/completed-tasks/${userId}`);
+                const result = await response.json();
+                
+                if (result.success) {
+                    log(`Found ${result.count} completed tasks`);
+                    displayCompletedTasks(result.completed_tasks);
+                } else {
+                    log(`Failed to get completed tasks: ${result.detail}`);
+                }
+            } catch (error) {
+                log(`Error getting completed tasks: ${error.message}`);
+            }
+        }
+
+        function displayCompletedTasks(tasks) {
+            const container = document.getElementById('completedTasksList');
+            
+            if (tasks.length === 0) {
+                container.innerHTML = '<p>No completed tasks found.</p>';
+                return;
+            }
+
+            let html = '<h4>Completed Tasks Ready for Integration:</h4>';
+            tasks.forEach(task => {
+                html += `
+                    <div class="status-card status-completed" style="margin: 10px 0;">
+                        <h5>📄 ${task.filename}</h5>
+                        <p><strong>Task ID:</strong> ${task.task_id}</p>
+                        <p><strong>Completed:</strong> ${new Date(task.completed_at).toLocaleString()}</p>
+                        <p><strong>Walls Extracted:</strong> ${task.result_summary.walls_extracted}</p>
+                        <button onclick="integrateTaskById('${task.task_id}')" class="btn" style="background: #28a745;">
+                            Integrate This Task
+                        </button>
+                    </div>
+                `;
+            });
+            
+            container.innerHTML = html;
+        }
+
+        async function integrateTaskById(taskId) {
+            document.getElementById('taskIdInput').value = taskId;
+            await integrateCompletedTask();
+        }
+
+        // Initial log
+        log('PDF Processing Test Page loaded');
+        log('This page demonstrates async PDF processing that prevents Heroku timeouts');
+    </script>
+</body>
+</html>

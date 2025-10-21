@@ -1,0 +1,28 @@
+{
+    "short_name": "LV-KI-BIM",
+    "name": "Automatisierte LV-Erstellung mit KI & BIM",
+    "icons": [
+        {
+            "src": "favicon_io/favicon.ico",
+            "sizes": "16x16 32x32",
+            "type": "image/x-icon"
+        },
+        {
+            "src": "favicon_io/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "favicon_io/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff",
+    "description": "ONLV Project - AI-powered Construction Bill of Quantities Assistant"
+}

@@ -1,0 +1,36 @@
+{
+    "riskAreas": {
+        "title": "Identified Risk Areas",
+        "location": "Location",
+        "description": "Description"
+    },
+    "preventionMeasures": {
+        "title": "💡 Recommended Prevention Measures",
+        "solutionTitle": "Solution {{number}}: Prevention measures for {{location}}",
+        "solutionType": "Solution type",
+        "addresses": "Addresses: Risk mitigation and cost claim prevention",
+        "addToOnlv": "Add to ONLV"
+    },
+    "position": {
+        "details": {
+            "title": "Position Details",
+            "number": "Position Number",
+            "keyword": "Keyword",
+            "description": "Description",
+            "unit": "Unit",
+            "grundtext": "Grundtext",
+            "positionDetails": "Position Details"
+        },
+        "labels": {
+            "grundtext": "Grundtext:",
+            "positionDetails": "Position Details:",
+            "unit": "Unit:"
+        }
+    },
+    "riskLevels": {
+        "high": "HIGH",
+        "medium": "MEDIUM",
+        "low": "LOW",
+        "unknown": "UNKNOWN"
+    }
+}

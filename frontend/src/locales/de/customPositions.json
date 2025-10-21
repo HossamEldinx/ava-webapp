@@ -1,0 +1,46 @@
+{
+    "title": "Benutzerdefinierte Positionen",
+    "subtitle": "Verwalten und anzeigen aller benutzerdefinierten ONLV-Positionen",
+    "filters": {
+        "title": "Filter",
+        "entityType": "Entitätstyp",
+        "lgNumber": "LG-Nummer",
+        "ulgNumber": "ULG-Nummer",
+        "grundtextNumber": "Grundtext-Nummer",
+        "allTypes": "Alle Typen",
+        "placeholderLg": "z.B. 00",
+        "placeholderUlg": "z.B. 11",
+        "placeholderGrundtext": "z.B. 01"
+    },
+    "buttons": {
+        "applyFilters": "Filter anwenden",
+        "clearFilters": "Filter löschen",
+        "refresh": "Aktualisieren"
+    },
+    "table": {
+        "fullNr": "Vollständige Nr.",
+        "shortText": "Kurztext",
+        "entityType": "Entitätstyp",
+        "lgUlgGt": "LG / ULG / GT",
+        "createdAt": "Erstellt am",
+        "actions": "Aktionen"
+    },
+    "entityTypes": {
+        "Grundtext": "Grundtext",
+        "Folgeposition": "Folgeposition",
+        "LG": "LG",
+        "ULG": "ULG",
+        "UngeteiltePosition": "Ungeteilte Position"
+    },
+    "messages": {
+        "loading": "Lade benutzerdefinierte Positionen...",
+        "positionsFound": "benutzerdefinierte Position(en) gefunden",
+        "noPositions": "Keine benutzerdefinierten Positionen gefunden",
+        "noPositionsDescription": "Versuchen Sie, Ihre Filter anzupassen oder erstellen Sie eine neue benutzerdefinierte Position.",
+        "deleteConfirm": "Sind Sie sicher, dass Sie die benutzerdefinierte Position löschen möchten",
+        "deleteSuccess": "erfolgreich gelöscht",
+        "deleteFailed": "Position konnte nicht gelöscht werden",
+        "deleteError": "Fehler beim Löschen der Position",
+        "deleting": "Wird gelöscht..."
+    }
+}

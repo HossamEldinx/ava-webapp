@@ -1,0 +1,181 @@
+{
+    "?xml": {
+        "@_version": "1.0",
+        "@_encoding": "utf-8"
+    },
+    "onlv": {
+        "metadaten": {
+            "erstelltam": "[DATEINAME]",
+            "dateiname": "[DATEINAME].onlv",
+            "programmsystem": "conwello",
+            "programmversion": "V1"
+        },
+        "grafiktabelle": {
+            "grafikelement": []
+        },
+        "leistungsteiltabelle": {
+            "leistungsteil": [
+                {
+                    "bezeichnung": "Festpreis, ganzes LV",
+                    "definition-preisanteil1": {
+                        "festpreise": ""
+                    },
+                    "definition-preisanteil2": {
+                        "festpreise": ""
+                    },
+                    "@_nr": "1"
+                }
+            ]
+        },
+        "zugelassenenachlaesse": {
+            "aufsummen": "",
+            "hierarchiestufen": {
+                "auflvsumme": ""
+            }
+        },
+        "ausschreibungs-lv": {
+            "kenndaten": {
+                "lvcode": "[LV_CODE]",
+                "vorhaben": "[PROJEKTNAME]",
+                "lvbezeichnung": "[LV_BEZEICHNUNG]",
+                "auftraggeber": {
+                    "firma": {
+                        "name": "Nasi",
+                        "kommunikation": {
+                            "adresse": {
+                                "strasse": "AUT",
+                                "ort": "AUT",
+                                "plz": "00",
+                                "land": "AUT"
+                            },
+                            "telefon": "00"
+                        }
+                    }
+                },
+                "vergebendestelle": {
+                    "firma": {
+                        "name": "[NAME DER VERGEBENDEN STELLE]",
+                        "kommunikation": {
+                            "adresse": {
+                                "strasse": "AUT",
+                                "ort": "AUT",
+                                "plz": "00",
+                                "land": "AUT"
+                            },
+                            "telefon": "00",
+                            "fax": "00",
+                            "email": "conwello@conwello.com",
+                            "www": "https://www.conwello.com"
+                        }
+                    }
+                },
+                "bearbeitungsstand": "[TODAY Date]",
+                "preisanteilmodell": {
+                    "preisanteile": ""
+                },
+                "wkz": "EUR",
+                "preisbasis": "[TODAY Date]"
+            },
+            "gliederung-lg": {
+                "preiserstellungsverfahren": "Preisangebotsverfahren",
+                "lb": {
+                    "bezeichnung": "Leistungsbeschreibung Hochbau",
+                    "herausgeber": {
+                        "firma": {
+                            "name": "Bundesministerium f. Digitalisierung u. Wirtschaftsstandort",
+                            "kommunikation": {
+                                "adresse": {
+                                    "strasse": "Stubenring 1",
+                                    "ort": "Wien",
+                                    "plz": 1010,
+                                    "land": "AUT"
+                                },
+                                "telefon": "+43 (01) 71 100 0",
+                                "www": "http://www.bmdw.gv.at"
+                            }
+                        }
+                    },
+                    "lbkennung": "HB",
+                    "versionsnummer": 22,
+                    "versionsdatum": "2021-12-31",
+                    "status": "freigegeben",
+                    "downloadurl": "https://www.bmdw.gv.at/Services/Bauservice/Hochbau.html"
+                },
+                "svb": {
+                    "vorbemerkung": {
+                        "p": [
+                            "Soweit in Vorbemerkungen oder Positionstexten nicht anders angegeben, gelten folgende Regelungen:",
+                            {
+                                "b": "1. Standardisierte Leistungsbeschreibung:"
+                            },
+                            "Dieses Leistungsverzeichnis (LV) wurde mit der Standardisierten Leistungsbeschreibung Hochbau, Version 022 (2021-12), herausgegeben vom Bundesministerium für Digitalisierung und Wirtschaftsstandort (BMDW), erstellt.",
+                            {
+                                "b": "2. Unklarheiten, Widersprüche:"
+                            },
+                            "Bei etwaigen Unklarheiten oder Widersprüchen in den Formulierungen gilt nachstehende Reihenfolge:",
+                            {
+                                "br": [
+                                    "",
+                                    "",
+                                    "",
+                                    ""
+                                ],
+                                "#text": "1. Folgetext einer Position (vor dem zugehörigen Grundtext)2. Positionstext (vor den Vorbemerkungen)3. Vorbemerkungen der Unterleistungsgruppe4. Vorbemerkungen der Leistungsgruppe5. Vorbemerkungen der Leistungsbeschreibung"
+                            },
+                            {
+                                "b": "3. Material/Erzeugnis/Type/Systeme:"
+                            },
+                            "Bauprodukte (z.B. Baumaterialien, Bauelemente, Bausysteme) werden mit dem Begriff Material bezeichnet, für technische Geräte und Anlagen werden die Begriffe Erzeugnis/Type/Systeme verwendet.",
+                            {
+                                "b": "4. Bieterangaben zu Materialien/Erzeugnisse/Typen/Systeme:"
+                            },
+                            "Die in den Bieterlücken angebotenen Materialien/Erzeugnisse/Typen/Systeme entsprechen mindestens den in der Ausschreibung bedungenen oder gewöhnlich vorausgesetzten technischen Anforderungen.",
+                            "Angebotene Materialien/Erzeugnisse/Typen/Systeme gelten für den Fall des Zuschlages als Vertragsbestandteil. Änderungen sind nur mit ausdrücklicher Zustimmung des Auftraggebers zulässig.",
+                            "Auf Verlangen des Auftraggebers weist der Bieter die im Leistungsverzeichnis bedungenen oder gewöhnlich vorausgesetzten technischen Anforderungen vollständig nach (Erfüllung der Mindestqualität).",
+                            {
+                                "b": "5. Beispielhaft genannte Materialien/Erzeugnisse/Typen/Systeme:"
+                            },
+                            "Sind im Leistungsverzeichnis zu einzelnen Positionen zusätzlich beispielhafte Materialien/Erzeugnisse/Typen/Systeme angeführt, können in der Bieterlücke gleichwertige Materialien/Erzeugnisse/Typen/Systeme angeboten werden. Die Kriterien der Gleichwertigkeit sind in der Position beschrieben.",
+                            "Setzt der Bieter in die Bieterlücke keine Materialien/Erzeugnisse/Typen/Systeme seiner Wahl ein, gelten die beispielhaft genannten Materialien/Erzeugnisse/Typen/Systeme als angeboten.",
+                            {
+                                "b": "6. Zulassungen:"
+                            },
+                            "Alle verwendeten Materialien/Erzeugnisse/Typen/Systeme haben alle für den projektspezifischen Verwendungszweck erforderlichen Zulassungen oder CE-Kennzeichen.",
+                            {
+                                "b": "7. Leistungsumfang:"
+                            },
+                            "Jede Bezugnahme auf bestimmte technische Spezifikationen gilt grundsätzlich mit dem Zusatz, dass auch rechtlich zugelassene gleichwertige technische Spezifikationen vom Auftraggeber anerkannt werden, sofern die Gleichwertigkeit vom Auftragnehmer nachgewiesen wird.",
+                            "Alle beschriebenen Leistungen umfassen das Liefern, Abladen, Lagern und Fördern (Vertragen) bis zur Einbaustelle und Verarbeiten oder Versetzen/Montieren der Materialien/Erzeugnisse/Typen/Systeme.",
+                            "Sind für die Inbetrieb- oder Ingebrauchnahme einer erbrachten Leistung besondere Überprüfungen, Befunde, Abnahmen, Betriebsanleitungen oder Dokumentationen erforderlich, sind etwaige Kosten hierfür in die Einheitspreise einkalkuliert.",
+                            {
+                                "b": "8. Nur Liefern:"
+                            },
+                            "Ist ausdrücklich nur das Liefern vereinbart, ist der Transport bis zur vereinbarten Abladestelle (Lieferadresse) und das Abladen in die Einheitspreise einkalkuliert.",
+                            {
+                                "b": "9. Nur Verarbeiten oder Versetzen/Montieren:"
+                            },
+                            "Ist ausdrücklich nur das Verarbeiten oder Versetzen/Montieren von Materialien/Erzeugnissen/Typen/Systemen vereinbart, ist das Fördern (Vertragen) von der Lagerstelle oder von der Abladestelle bis zur Einbaustelle in den jeweiligen Einheitspreis der zugehörigen Verarbeitungs- oder Versetz-/Montagepositionen einkalkuliert.",
+                            {
+                                "b": "10. Geschoße:"
+                            },
+                            "Alle Leistungen gelten ohne Unterschied der Geschoße.",
+                            {
+                                "b": "11. Verwerten, Deponieren oder Entsorgen:"
+                            },
+                            "Sofern nicht anders festgelegt, gehen Materialien die z.B. abgebrochen oder z.B. bei Erarbeiten ausgehoben werden, in das Eigentum des Auftragnehmers über, welcher somit explizit zum umweltgerechten Verwerten, Deponieren oder Entsorgen der Baurestmassen beauftragt ist.",
+                            {
+                                "b": "12. Arbeitshöhen:"
+                            },
+                            "Alle Arbeiten/Leistungen sind bis zu einer Arbeitshöhe von 3,2 m in die Einheitspreise einkalkuliert.",
+                            "Die Arbeitshöhe ist jene Höhe über dem Fußbodenniveau (über dem Geländeniveau) oder über der Aufstellfläche der Aufstiegshilfe, in der sich die zu erbringende Leistung befindet."
+                        ]
+                    }
+                },
+                "lg-liste": {
+                    "lg": []
+                }
+            }
+        },
+        "@_xmlns": "http://www.oenorm.at/schema/A2063/2021-03-01"
+    }
+}

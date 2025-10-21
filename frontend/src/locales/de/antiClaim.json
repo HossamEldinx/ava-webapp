@@ -1,0 +1,36 @@
+{
+    "riskAreas": {
+        "title": "Identifizierte Risikobereiche",
+        "location": "Standort",
+        "description": "Beschreibung"
+    },
+    "preventionMeasures": {
+        "title": "💡 Empfohlene Präventivmaßnahmen",
+        "solutionTitle": "Lösung {{number}}: Präventivmaßnahmen für {{location}}",
+        "solutionType": "Lösungstyp",
+        "addresses": "Behandelt: Risikominderung und Kostenforderungsprävention",
+        "addToOnlv": "Zu ONLV hinzufügen"
+    },
+    "position": {
+        "details": {
+            "title": "Positionsdetails",
+            "number": "Positionsnummer",
+            "keyword": "Stichwort",
+            "description": "Beschreibung",
+            "unit": "Einheit",
+            "grundtext": "Grundtext",
+            "positionDetails": "Positionsdetails"
+        },
+        "labels": {
+            "grundtext": "Grundtext:",
+            "positionDetails": "Positionsdetails:",
+            "unit": "Einheit:"
+        }
+    },
+    "riskLevels": {
+        "high": "HOCH",
+        "medium": "MITTEL",
+        "low": "NIEDRIG",
+        "unknown": "UNBEKANNT"
+    }
+}

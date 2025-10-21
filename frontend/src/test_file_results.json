@@ -1,0 +1,260 @@
+{
+  "lg-eigenschaften": {
+    "ueberschrift": "Allgemeine Bestimmungen",
+    "vorbemerkung": {
+      "p": [
+        "Version 022 (2021-12)",
+        "Soweit in Vorbemerkungen oder Positionstexten nicht anders angegeben, gelten für alle Leistungen dieser Gruppe folgende Regelungen.",
+        {
+          "b": "1. Nachweise:"
+        },
+        "Nachweise für die Standfestigkeit, die geforderte Feuerwiderstandsklasse und den geforderte Schallschutzwert (Rw) erfolgen, soweit sich der Wert aus der ÖNORM und den Klassifizierungsberichten der Industrie oder durch einen Prüfbericht einer Prüf-, Überwachungs- und Zertifizierungsstelle ergibt, durch den AN.",
+        {
+          "b": "2. Einkalkulierte Leistungen:"
+        },
+        "2.2 Folgende Leistungen sind (ergänzend zu den Nebenleistungen gemäß ÖNORM) in die Einheitspreise einkalkuliert:",
+        {
+          "b": "3. Ausmaß- und Abrechnungsregeln:"
+        },
+        "3.1 Höhen über 3,2 bis 5 m:",
+        "Die Abgeltung der Erschwernisse bei Höhen über 3,2 bis 5 m ist mit einer Aufzahlung geregelt, in die auch Gerüstmehrkosten (z.B. für Arbeitsgerüste, Aufstiegshilfen) einkalkuliert sind.",
+        "Bei Wänden mit einer Höhe über 3,2 bis 5 m wird die Aufzahlung von der Aufstandsfläche bis Oberkante dieser Wand, also die gesamte Wandhöhe und nicht nur die höher gelegenen Teilflächen, verrechnet.",
+        "Wände mit einer Höhe von Null bis über 3,2 m werden durch gedachte lotrechte seitliche Begrenzungen gegenüber etwaigen Wänden mit einer Höhe von Null bis 3,2 m, auch bei schrägem oberen Abschluss, abgegrenzt.",
+        "3.2 Öffnungen:",
+        "Öffnungen, für oder ohne Einbauten, bis 4 m2 werden hohl für voll abgerechnet.",
+        "Das Ausbilden von Randausbildungen und Leibungen bis 30 cm Breite, einschließlich Kantenausbildung und etwaige Anschlussfugen an Einbauteile, ist in die Einheitspreise einkalkuliert.",
+        "3.3 Wände:",
+        "Wände werden in ihrer größten Ansichtsfläche, d.h. ohne Abzug etwaiger Abschrägungen, bemessen."
+      ],
+      "ul": {
+        "li": [
+          "Höhen bis 3,2 m, wenn keine Höhe angegeben ist",
+          "Gerüste (z.B. Arbeitsgerüste, Aufstiegshilfen) für die angegebene Höhe, einschließlich erhöhtem Aufwand für den Materialtransport und sonstiger Erschwernisse",
+          "bei Ständerwänden und Bekleidungen das Herstellen und Schließen von Öffnungen bis 0,01 m2",
+          "bei Ständerwänden eine Dämmschicht aus 5 cm Mineralwolle",
+          "ein starrer Anschluss der Profile mit Dichtungsstreifen an Wand, Decke und Boden",
+          "das Verspachteln von Plattenstößen und Befestigungsmitteln erfolgt gemäß ÖNORM mit der Qualitätsstufe 2",
+          "bei Eckausbildungen eingespachtelte Glasfaser- oder Papierstreifen",
+          "das Ausgleichen von Unebenheiten mit einer Ausgleichsschicht bis 20 mm bei Wandbekleidungen",
+          "das Erstellen von Wänden in 2 Arbeitstakten"
+        ]
+      }
+    }
+  },
+  "ulg-liste": {
+    "ulg": [
+      {
+        "ulg-eigenschaften": {
+          "ueberschrift": "Trennwandsysteme",
+          "vorbemerkung": {
+            "p": [
+              {
+                "b": "Montage:"
+              },
+              "Die Montage erfolgt auf einem vom Auftraggeber bereitgestellten stabilen und tragfähigen Untergrund."
+            ]
+          }
+        },
+        "positionen": {
+          "grundtextnr": [
+            {
+              "grundtext": {
+                "langtext": {
+                  "p": [
+                    "Aufzahlungen (Az) auf umsetzbare Gipskarton-Systemtrennwände (GK-Systemtrennw.)."
+                  ]
+                }
+              },
+              "folgeposition": [
+                {
+                  "pos-eigenschaften": {
+                    "stichwort": "Az GK-Systemtrennw.f.Wandecke 90°",
+                    "langtext": {
+                      "p": [
+                        "Für Ecken in einem Winkel von 90° (Grad) mit Eckblenden, einschließlich der Anpassarbeiten, in Ausführung der Wandpaneele."
+                      ]
+                    },
+                    "einheit": "m"
+                  },
+                  "@_ftnr": "Q",
+                  "@_mfv": ""
+                }
+              ],
+              "@_nr": "23"
+            }
+          ]
+        },
+        "@_nr": "41"
+      },
+      {
+        "ulg-eigenschaften": {
+          "ueberschrift": "Angebotsbestimmungen"
+        },
+        "positionen": {
+          "grundtextnr": [
+            {
+              "grundtext": {
+                "langtext": {
+                  "p": [
+                    "Die Vergabe der ausgeschriebenen Leistung erfolgt auf der Grundlage des Bundesvergabegesetzes (BVergG)."
+                  ]
+                }
+              },
+              "folgeposition": [
+                {
+                  "pos-eigenschaften": {
+                    "stichwort": "Öffentliche AG/Oberschwellenbereich",
+                    "langtext": {
+                      "p": [
+                        "Es gelten die Bestimmungen für öffentliche Auftraggeber im Oberschwellenbereich."
+                      ]
+                    }
+                  },
+                  "@_ftnr": "A",
+                  "@_mfv": ""
+                },
+                {
+                  "pos-eigenschaften": {
+                    "stichwort": "Öffentliche AG/Unterschwellenbereich",
+                    "langtext": {
+                      "p": [
+                        "Es gelten die Bestimmungen für öffentliche Auftraggeber im Unterschwellenbereich."
+                      ]
+                    }
+                  },
+                  "@_ftnr": "B",
+                  "@_mfv": ""
+                },
+                {
+                  "pos-eigenschaften": {
+                    "stichwort": "Sektoren-AG/Oberschwellenbereich",
+                    "langtext": {
+                      "p": [
+                        "Es gelten die Bestimmungen für Sektorenauftraggeber im Oberschwellenbereich."
+                      ]
+                    }
+                  },
+                  "@_ftnr": "C",
+                  "@_mfv": ""
+                },
+                {
+                  "pos-eigenschaften": {
+                    "stichwort": "Sektoren-AG/Unterschwellenbereich",
+                    "langtext": {
+                      "p": [
+                        "Es gelten die Bestimmungen für Sektorenauftraggeber im Unterschwellenbereich."
+                      ]
+                    }
+                  },
+                  "@_ftnr": "D",
+                  "@_mfv": ""
+                }
+              ],
+              "@_nr": "01"
+            },
+            {
+              "grundtext": {
+                "langtext": {
+                  "p": [
+                    {
+                      "br": [
+                        "",
+                        ""
+                      ],
+                      "#text": "Die Form der Angebote wird wie folgt geregelt:Der vom Ausschreiber erstellte Vordruck ist in jedem Fall rechtsgültig unterfertigt abzugeben.Ist aus der Sicht des Bewerbers oder Bieters eine Berichtigung der Ausschreibung (dazu zählt auch ein etwaiger SiGe-Plan) erforderlich, so hat dieser grundsätzlich 14 Tage vor Ende der Angebotsfrist dies dem Auftraggeber mitzuteilen."
+                    }
+                  ]
+                }
+              },
+              "folgeposition": [
+                {
+                  "pos-eigenschaften": {
+                    "stichwort": "Datenträgeraustausch",
+                    "langtext": {
+                      "p": [
+                        {
+                          "br": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                          ],
+                          "al": "",
+                          "#text": "Ein Datenträgeraustausch gemäß ÖNORM ist zulässig, wenn der Bieter vom Ausschreiber einen Datenträger mit dem Ausschreibungs-Leistungsverzeichnis erhalten hat.Macht der Bieter von der Möglichkeit der Abgabe eines Datenträgers Gebrauch, ist die Abgabe eines eigenen automationsunterstützt und rechtsgültig unterfertigten Leistungsverzeichnisses des Bieters anstelle des auf den Vordrucken des Ausschreibers erstellten Angebotes zulässig.Der Mindestinhalt des gedruckten Angebotsleistungsverzeichnisses muss den Bestimmungen der ÖNORM entsprechen.Der Datenträger wird vom Ausschreiber eingelesen. Bei Widersprüchen oder Unklarheiten, einschließlich technischer Probleme beim Einlesen des Datenträgers wird vereinbart:-Das Angebot wird vorläufig auf Grund des abgegebenen schriftlichen Leistungsverzeichnisses protokolliert.-Der fehlerhafte oder unlesbare Datenträger wird vom Bieter innerhalb einer vom Ausschreiber festgesetzten, angemessenen Frist durch einen mangelfreien ersetzt.-Gelingt es dem Bieter nicht, einen dem gedruckten Angebot entsprechenden mangelfreien Datenträger fristgerecht vorzulegen, der den Bestimmungen der ÖNORM entspricht und auch tatsächlich vom Ausschreiber eingelesen werden kann, ist der Ausschreiber zu einer ersatzweisen Behebung dieses Mangels auf Kosten des Bieters berechtigt.Hat der Bieter sein Angebot auf dem Vordruck des Ausschreibers abgegeben, ist die Abgabe eines Datenträgers nicht erforderlich.Datenträger:"
+                        }
+                      ]
+                    }
+                  },
+                  "@_ftnr": "A",
+                  "@_mfv": ""
+                }
+              ],
+              "@_nr": "03"
+            }
+          ]
+        },
+        "@_nr": "11"
+      },
+      {
+        "ulg-eigenschaften": {
+          "ueberschrift": "Besondere Bestimmungen für den Einzelfall"
+        },
+        "positionen": {
+          "grundtextnr": [
+            {
+              "grundtext": {
+                "langtext": {
+                  "p": [
+                    {
+                      "br": "",
+                      "#text": "Die angegebenen Sicherstellungen werden vereinbart.Soweit nicht anders bestimmt, können nach Wahl des Auftragnehmers als Sicherstellung dienen: Bargeld, Bankgarantien, Rücklassversicherungen."
+                    }
+                  ]
+                }
+              },
+              "folgeposition": [
+                {
+                  "pos-eigenschaften": {
+                    "stichwort": "Haftungsrücklass",
+                    "langtext": {
+                      "p": [
+                        {
+                          "al": "",
+                          "#text": "Ein Haftungsrücklass in der Höhe von:"
+                        }
+                      ]
+                    }
+                  },
+                  "@_ftnr": "C",
+                  "@_mfv": ""
+                },
+                {
+                  "pos-eigenschaften": {
+                    "stichwort": "Deckungsrücklass",
+                    "langtext": {
+                      "p": [
+                        {
+                          "al": "",
+                          "#text": "Ein Deckungsrücklass in der Höhe von:"
+                        }
+                      ]
+                    }
+                  },
+                  "@_ftnr": "B",
+                  "@_mfv": ""
+                }
+              ],
+              "@_nr": "21"
+            }
+          ]
+        },
+        "@_nr": "16"
+      }
+    ]
+  },
+  "@_nr": "00"
+}

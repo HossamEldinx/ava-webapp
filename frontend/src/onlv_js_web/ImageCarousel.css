@@ -1,0 +1,21 @@
+.image-carousel-wrapper .slick-prev:before,
+.image-carousel-wrapper .slick-next:before {
+    color: indigo-600; /* blue-500 */
+    font-size: 24px;
+}
+.image-carousel-wrapper .slick-prev {
+    left: -25px; /* Adjust as needed */
+}
+.image-carousel-wrapper .slick-next {
+    right: -25px; /* Adjust as needed */
+}
+.image-carousel-wrapper .slick-dots li button:before {
+    color: gray-400; /* gray-400 */
+    font-size: 10px;
+}
+.image-carousel-wrapper
+    .slick-dots
+    li.slick-active
+    button:before {
+    color: indigo-600; /* blue-500 */
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONLV Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .status {
+            background: #e8f5e8;
+            border: 1px solid #4caf50;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .api-test {
+            margin: 20px 0;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        #result {
+            margin-top: 10px;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 5px;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 ONLV Project - Heroku Deployment</h1>
+        
+        <div class="status">
+            <h3>✅ Deployment Status: SUCCESS</h3>
+            <p>Your FastAPI backend is running successfully on Heroku!</p>
+            <p>The React frontend build is being configured...</p>
+        </div>
+
+        <div class="api-test">
+            <h3>🔧 API Test</h3>
+            <button onclick="testAPI()">Test Backend API</button>
+            <div id="result"></div>
+        </div>
+
+        <div>
+            <h3>📋 Next Steps:</h3>
+            <ul>
+                <li>✅ Backend API is working</li>
+                <li>🔄 React frontend build in progress</li>
+                <li>🔧 Configure environment variables</li>
+                <li>🎯 Test all API endpoints</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>🌐 API Endpoints:</h3>
+            <ul>
+                <li><a href="/api/health" target="_blank">/api/health</a> - Health check</li>
+                <li><a href="/api/users/" target="_blank">/api/users/</a> - Users API</li>
+                <li><a href="/api/elements/" target="_blank">/api/elements/</a> - Elements API</li>
+                <li><a href="/api/regulations/" target="_blank">/api/regulations/</a> - Regulations API</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        async function testAPI() {
+            const resultDiv = document.getElementById('result');
+            resultDiv.textContent = 'Testing API...';
+            
+            try {
+                const response = await fetch('/api/health');
+                const data = await response.json();
+                resultDiv.textContent = `✅ API Response:\n${JSON.stringify(data, null, 2)}`;
+            } catch (error) {
+                resultDiv.textContent = `❌ API Error:\n${error.message}`;
+            }
+        }
+
+        // Auto-test API on page load
+        window.onload = () => {
+            setTimeout(testAPI, 1000);
+        };
+    </script>
+</body>
+</html>

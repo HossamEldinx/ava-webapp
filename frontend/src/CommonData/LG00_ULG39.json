@@ -1,0 +1,1555 @@
+{
+    "?xml": {
+        "@_version": "1.0",
+        "@_encoding": "utf-8"
+    },
+    "onlv": {
+        "metadaten": {
+            "erstelltam": "[DATEINAME]",
+            "dateiname": "[DATEINAME].onlv",
+            "programmsystem": "conwello",
+            "programmversion": "V1"
+        },
+        "grafiktabelle": {
+            "grafikelement": []
+        },
+        "leistungsteiltabelle": {
+            "leistungsteil": [
+                {
+                    "bezeichnung": "Festpreis, ganzes LV",
+                    "definition-preisanteil1": {
+                        "festpreise": ""
+                    },
+                    "definition-preisanteil2": {
+                        "festpreise": ""
+                    },
+                    "@_nr": "1"
+                }
+            ]
+        },
+        "zugelassenenachlaesse": {
+            "aufsummen": "",
+            "hierarchiestufen": {
+                "auflvsumme": ""
+            }
+        },
+        "ausschreibungs-lv": {
+            "kenndaten": {
+                "lvcode": "[LV_CODE]",
+                "vorhaben": "[PROJEKTNAME]",
+                "lvbezeichnung": "[LV_BEZEICHNUNG]",
+                "auftraggeber": {
+                    "firma": {
+                        "name": "Nasi",
+                        "kommunikation": {
+                            "adresse": {
+                                "strasse": "AUT",
+                                "ort": "AUT",
+                                "plz": "00",
+                                "land": "AUT"
+                            },
+                            "telefon": "00"
+                        }
+                    }
+                },
+                "vergebendestelle": {
+                    "firma": {
+                        "name": "[NAME DER VERGEBENDEN STELLE]",
+                        "kommunikation": {
+                            "adresse": {
+                                "strasse": "AUT",
+                                "ort": "AUT",
+                                "plz": "00",
+                                "land": "AUT"
+                            },
+                            "telefon": "00",
+                            "fax": "00",
+                            "email": "conwello@conwello.com",
+                            "www": "https://www.conwello.com"
+                        }
+                    }
+                },
+                "bearbeitungsstand": "[TODAY Date]",
+                "preisanteilmodell": {
+                    "preisanteile": ""
+                },
+                "wkz": "EUR",
+                "preisbasis": "[TODAY Date]"
+            },
+            "gliederung-lg": {
+                "preiserstellungsverfahren": "Preisangebotsverfahren",
+                "lb": {
+                    "bezeichnung": "Leistungsbeschreibung Hochbau",
+                    "herausgeber": {
+                        "firma": {
+                            "name": "Bundesministerium f. Digitalisierung u. Wirtschaftsstandort",
+                            "kommunikation": {
+                                "adresse": {
+                                    "strasse": "Stubenring 1",
+                                    "ort": "Wien",
+                                    "plz": 1010,
+                                    "land": "AUT"
+                                },
+                                "telefon": "+43 (01) 71 100 0",
+                                "www": "http://www.bmdw.gv.at"
+                            }
+                        }
+                    },
+                    "lbkennung": "HB",
+                    "versionsnummer": 22,
+                    "versionsdatum": "2021-12-31",
+                    "status": "freigegeben",
+                    "downloadurl": "https://www.bmdw.gv.at/Services/Bauservice/Hochbau.html"
+                },
+                "svb": {
+                    "vorbemerkung": {
+                        "p": [
+                            "Soweit in Vorbemerkungen oder Positionstexten nicht anders angegeben, gelten folgende Regelungen:",
+                            {
+                                "b": "1. Standardisierte Leistungsbeschreibung:"
+                            },
+                            "Dieses Leistungsverzeichnis (LV) wurde mit der Standardisierten Leistungsbeschreibung Hochbau, Version 022 (2021-12), herausgegeben vom Bundesministerium für Digitalisierung und Wirtschaftsstandort (BMDW), erstellt.",
+                            {
+                                "b": "2. Unklarheiten, Widersprüche:"
+                            },
+                            "Bei etwaigen Unklarheiten oder Widersprüchen in den Formulierungen gilt nachstehende Reihenfolge:",
+                            {
+                                "br": [
+                                    "",
+                                    "",
+                                    "",
+                                    ""
+                                ],
+                                "#text": "1. Folgetext einer Position (vor dem zugehörigen Grundtext)2. Positionstext (vor den Vorbemerkungen)3. Vorbemerkungen der Unterleistungsgruppe4. Vorbemerkungen der Leistungsgruppe5. Vorbemerkungen der Leistungsbeschreibung"
+                            },
+                            {
+                                "b": "3. Material/Erzeugnis/Type/Systeme:"
+                            },
+                            "Bauprodukte (z.B. Baumaterialien, Bauelemente, Bausysteme) werden mit dem Begriff Material bezeichnet, für technische Geräte und Anlagen werden die Begriffe Erzeugnis/Type/Systeme verwendet.",
+                            {
+                                "b": "4. Bieterangaben zu Materialien/Erzeugnisse/Typen/Systeme:"
+                            },
+                            "Die in den Bieterlücken angebotenen Materialien/Erzeugnisse/Typen/Systeme entsprechen mindestens den in der Ausschreibung bedungenen oder gewöhnlich vorausgesetzten technischen Anforderungen.",
+                            "Angebotene Materialien/Erzeugnisse/Typen/Systeme gelten für den Fall des Zuschlages als Vertragsbestandteil. Änderungen sind nur mit ausdrücklicher Zustimmung des Auftraggebers zulässig.",
+                            "Auf Verlangen des Auftraggebers weist der Bieter die im Leistungsverzeichnis bedungenen oder gewöhnlich vorausgesetzten technischen Anforderungen vollständig nach (Erfüllung der Mindestqualität).",
+                            {
+                                "b": "5. Beispielhaft genannte Materialien/Erzeugnisse/Typen/Systeme:"
+                            },
+                            "Sind im Leistungsverzeichnis zu einzelnen Positionen zusätzlich beispielhafte Materialien/Erzeugnisse/Typen/Systeme angeführt, können in der Bieterlücke gleichwertige Materialien/Erzeugnisse/Typen/Systeme angeboten werden. Die Kriterien der Gleichwertigkeit sind in der Position beschrieben.",
+                            "Setzt der Bieter in die Bieterlücke keine Materialien/Erzeugnisse/Typen/Systeme seiner Wahl ein, gelten die beispielhaft genannten Materialien/Erzeugnisse/Typen/Systeme als angeboten.",
+                            {
+                                "b": "6. Zulassungen:"
+                            },
+                            "Alle verwendeten Materialien/Erzeugnisse/Typen/Systeme haben alle für den projektspezifischen Verwendungszweck erforderlichen Zulassungen oder CE-Kennzeichen.",
+                            {
+                                "b": "7. Leistungsumfang:"
+                            },
+                            "Jede Bezugnahme auf bestimmte technische Spezifikationen gilt grundsätzlich mit dem Zusatz, dass auch rechtlich zugelassene gleichwertige technische Spezifikationen vom Auftraggeber anerkannt werden, sofern die Gleichwertigkeit vom Auftragnehmer nachgewiesen wird.",
+                            "Alle beschriebenen Leistungen umfassen das Liefern, Abladen, Lagern und Fördern (Vertragen) bis zur Einbaustelle und Verarbeiten oder Versetzen/Montieren der Materialien/Erzeugnisse/Typen/Systeme.",
+                            "Sind für die Inbetrieb- oder Ingebrauchnahme einer erbrachten Leistung besondere Überprüfungen, Befunde, Abnahmen, Betriebsanleitungen oder Dokumentationen erforderlich, sind etwaige Kosten hierfür in die Einheitspreise einkalkuliert.",
+                            {
+                                "b": "8. Nur Liefern:"
+                            },
+                            "Ist ausdrücklich nur das Liefern vereinbart, ist der Transport bis zur vereinbarten Abladestelle (Lieferadresse) und das Abladen in die Einheitspreise einkalkuliert.",
+                            {
+                                "b": "9. Nur Verarbeiten oder Versetzen/Montieren:"
+                            },
+                            "Ist ausdrücklich nur das Verarbeiten oder Versetzen/Montieren von Materialien/Erzeugnissen/Typen/Systemen vereinbart, ist das Fördern (Vertragen) von der Lagerstelle oder von der Abladestelle bis zur Einbaustelle in den jeweiligen Einheitspreis der zugehörigen Verarbeitungs- oder Versetz-/Montagepositionen einkalkuliert.",
+                            {
+                                "b": "10. Geschoße:"
+                            },
+                            "Alle Leistungen gelten ohne Unterschied der Geschoße.",
+                            {
+                                "b": "11. Verwerten, Deponieren oder Entsorgen:"
+                            },
+                            "Sofern nicht anders festgelegt, gehen Materialien die z.B. abgebrochen oder z.B. bei Erarbeiten ausgehoben werden, in das Eigentum des Auftragnehmers über, welcher somit explizit zum umweltgerechten Verwerten, Deponieren oder Entsorgen der Baurestmassen beauftragt ist.",
+                            {
+                                "b": "12. Arbeitshöhen:"
+                            },
+                            "Alle Arbeiten/Leistungen sind bis zu einer Arbeitshöhe von 3,2 m in die Einheitspreise einkalkuliert.",
+                            "Die Arbeitshöhe ist jene Höhe über dem Fußbodenniveau (über dem Geländeniveau) oder über der Aufstellfläche der Aufstiegshilfe, in der sich die zu erbringende Leistung befindet."
+                        ]
+                    }
+                },
+                "lg-liste": {
+                    "lg": [
+                        {
+                            "lg-eigenschaften": {
+                                "ueberschrift": "Allgemeine Bestimmungen",
+                                "vorbemerkung": {
+                                    "p": [
+                                        "Version 022 (2021-12)"
+                                    ]
+                                },
+                                "aenderungskennzeichnungen": [
+                                    {
+                                        "lbversion": 22,
+                                        "aenderungsumfang": "geändert",
+                                        "aenderungsbeschreibung": {
+                                            "p": [
+                                                "z.B.",
+                                                {
+                                                    "u": "nicht (mehr) standardisiert",
+                                                    "#text": ":"
+                                                },
+                                                "00.1123 Angebotsbewertung",
+                                                "00.1124 Zuschlagskriterien",
+                                                "00.1612 Außergewöhnliche Witterungsverhältnisse"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "ulg-liste": {
+                                "ulg": [
+                                    {
+                                        "ulg-eigenschaften": {
+                                            "ueberschrift": "Angebotsbestimmungen",
+                                            "kommentar": {
+                                                "p": [
+                                                    {
+                                                        "i": "Kommentar:"
+                                                    },
+                                                    {
+                                                        "i": "Für eine vertiefte Angebotsprüfung können Positionen als wesentliche Positionen gemäß ÖNORM gekennzeichnet werden."
+                                                    },
+                                                    {
+                                                        "i": "Das Vorlegen einer Eigenerklärung gemäß BVergG ist frei zu formulieren."
+                                                    }
+                                                ]
+                                            },
+                                            "aenderungskennzeichnungen": [
+                                                {
+                                                    "lbversion": 22,
+                                                    "aenderungsumfang": "geändert"
+                                                }
+                                            ]
+                                        },
+                                        "positionen": {
+                                            "grundtextnr": [
+                                                {
+                                                    "grundtext": {
+                                                        "langtext": {
+                                                            "p": [
+                                                                "Die Vergabe der ausgeschriebenen Leistung erfolgt auf der Grundlage des Bundesvergabegesetzes (BVergG)."
+                                                            ]
+                                                        }
+                                                    },
+                                                    "folgeposition": [
+                                                        {
+                                                            "pos-eigenschaften": {
+                                                                "stichwort": "Öffentliche AG/Oberschwellenbereich",
+                                                                "langtext": {
+                                                                    "p": [
+                                                                        "Es gelten die Bestimmungen für öffentliche Auftraggeber im Oberschwellenbereich."
+                                                                    ]
+                                                                },
+                                                                "aenderungskennzeichnungen": [
+                                                                    {
+                                                                        "lbversion": 18
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "@_ftnr": "A",
+                                                            "@_mfv": ""
+                                                        }
+                                                    ],
+                                                    "@_nr": "01"
+                                                },
+                                                {
+                                                    "grundtext": {
+                                                        "langtext": {
+                                                            "p": [
+                                                                "Die Vergabe der ausgeschriebenen Leistung erfolgt nach folgenden Bestimmungen:"
+                                                            ]
+                                                        }
+                                                    },
+                                                    "folgeposition": [
+                                                        {
+                                                            "pos-eigenschaften": {
+                                                                "stichwort": "Vergabe nach ÖNORM A2050",
+                                                                "langtext": {
+                                                                    "p": [
+                                                                        "ÖNORM A 2050 (Vergabe von Aufträgen über Leistungen)."
+                                                                    ]
+                                                                },
+                                                                "aenderungskennzeichnungen": [
+                                                                    {
+                                                                        "lbversion": 17
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "@_ftnr": "A",
+                                                            "@_mfv": ""
+                                                        }
+                                                    ],
+                                                    "@_nr": "02"
+                                                },
+                                                {
+                                                    "grundtext": {
+                                                        "langtext": {
+                                                            "p": [
+                                                                {
+                                                                    "br": [
+                                                                        "",
+                                                                        ""
+                                                                    ],
+                                                                    "#text": "Die Form der Angebote wird wie folgt geregelt:Der vom Ausschreiber erstellte Vordruck ist in jedem Fall rechtsgültig unterfertigt abzugeben.Ist aus der Sicht des Bewerbers oder Bieters eine Berichtigung der Ausschreibung (dazu zählt auch ein etwaiger SiGe-Plan) erforderlich, so hat dieser grundsätzlich 14 Tage vor Ende der Angebotsfrist dies dem Auftraggeber mitzuteilen."
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    "folgeposition": [
+                                                        {
+                                                            "pos-eigenschaften": {
+                                                                "stichwort": "Datenträgeraustausch",
+                                                                "langtext": {
+                                                                    "p": [
+                                                                        {
+                                                                            "br": [
+                                                                                "",
+                                                                                "",
+                                                                                "",
+                                                                                "",
+                                                                                "",
+                                                                                "",
+                                                                                "",
+                                                                                ""
+                                                                            ],
+                                                                            "al": "",
+                                                                            "#text": "Ein Datenträgeraustausch gemäß ÖNORM ist zulässig, wenn der Bieter vom Ausschreiber einen Datenträger mit dem Ausschreibungs-Leistungsverzeichnis erhalten hat.Macht der Bieter von der Möglichkeit der Abgabe eines Datenträgers Gebrauch, ist die Abgabe eines eigenen automationsunterstützt und rechtsgültig unterfertigten Leistungsverzeichnisses des Bieters anstelle des auf den Vordrucken des Ausschreibers erstellten Angebotes zulässig.Der Mindestinhalt des gedruckten Angebotsleistungsverzeichnisses muss den Bestimmungen der ÖNORM entsprechen.Der Datenträger wird vom Ausschreiber eingelesen. Bei Widersprüchen oder Unklarheiten, einschließlich technischer Probleme beim Einlesen des Datenträgers wird vereinbart:-Das Angebot wird vorläufig auf Grund des abgegebenen schriftlichen Leistungsverzeichnisses protokolliert.-Der fehlerhafte oder unlesbare Datenträger wird vom Bieter innerhalb einer vom Ausschreiber festgesetzten, angemessenen Frist durch einen mangelfreien ersetzt.-Gelingt es dem Bieter nicht, einen dem gedruckten Angebot entsprechenden mangelfreien Datenträger fristgerecht vorzulegen, der den Bestimmungen der ÖNORM entspricht und auch tatsächlich vom Ausschreiber eingelesen werden kann, ist der Ausschreiber zu einer ersatzweisen Behebung dieses Mangels auf Kosten des Bieters berechtigt.Hat der Bieter sein Angebot auf dem Vordruck des Ausschreibers abgegeben, ist die Abgabe eines Datenträgers nicht erforderlich.Datenträger:"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "aenderungskennzeichnungen": [
+                                                                    {
+                                                                        "lbversion": 18
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "@_ftnr": "A",
+                                                            "@_mfv": ""
+                                                        }
+                                                    ],
+                                                    "@_nr": "03"
+                                                },
+                                                {
+                                                    "grundtext": {
+                                                        "langtext": {
+                                                            "p": [
+                                                                "Ein Angebot gilt unbeschadet etwaiger Vorschriften in Gesetzen und Verordnungen, oder etwaiger Bestimmungen in der ÖNORM als vollständig, wenn es folgende Angaben und Unterlagen enthält:"
+                                                            ]
+                                                        }
+                                                    },
+                                                    "folgeposition": [
+                                                        {
+                                                            "pos-eigenschaften": {
+                                                                "stichwort": "Vollständigkeit des Angebotes",
+                                                                "langtext": {
+                                                                    "p": [
+                                                                        "Angaben des Bieters in allen vom Ausschreiber vorgesehenen Preisfeldern im Leistungsverzeichnis und in etwaigen beigeschlossenen Formularen, sowie sonstige in der Ausschreibung verlangte Nachweise und Beilagen zum Angebot."
+                                                                    ]
+                                                                },
+                                                                "aenderungskennzeichnungen": [
+                                                                    {
+                                                                        "lbversion": 17
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "@_ftnr": "A",
+                                                            "@_mfv": ""
+                                                        }
+                                                    ],
+                                                    "@_nr": "04"
+                                                },
+                                                {
+                                                    "grundtext": {
+                                                        "langtext": {
+                                                            "p": [
+                                                                "In Umsetzung der Bestimmungen des Bauarbeitenkoordinationsgesetzes (BauKG) besteht die Ausschreibung aus dem Leistungsverzeichnis, etwaigen Beilagen, und aus dem Sicherheits- und Gesundheitsschutzplan (SiGe-Plan) sowie der Unterlage für spätere Arbeiten."
+                                                            ]
+                                                        }
+                                                    },
+                                                    "folgeposition": [
+                                                        {
+                                                            "pos-eigenschaften": {
+                                                                "stichwort": "Sicherheit und Gesundheitsschutz",
+                                                                "langtext": {
+                                                                    "p": [
+                                                                        {
+                                                                            "br": [
+                                                                                "",
+                                                                                ""
+                                                                            ],
+                                                                            "#text": "Maßnahmen im SiGe-Plan sind verbindlich. Der SiGe-Plan ist bei der Kalkulation des Angebotes zu berücksichtigen.Kosten für Maßnahmen, die der Bieter gemäß SiGe-Plan durchzuführen hat, sind, soweit das Leistungsverzeichnis dafür keine Positionen der Unterleistungsgruppe Baustellengemeinkosten im Einzelnen enthält, in den allgemeinen Sammelpositionen der Unterleistungsgruppe Zusammenfassung der Baustellengemeinkosten einkalkuliert. Ebenso sind darin Kosten enthalten, die für die Sicherheit und den Gesundheitsschutz von eigenen Arbeitnehmern auf Grund rechtlicher Vorschriften erforderlich sind, wenn diese nicht als Nebenleistungen in anderen Positionen einkalkuliert sind.Die im SiGe-Plan oder im Leistungsverzeichnis festgelegten Rahmentermine sind für das Angebot verbindliche Vorgaben. Die genauen Ausführungsfristen werden vom Auftraggeber in Abstimmung mit dem Baustellenkoordinator und im Einvernehmen mit den ausführenden Firmen festgelegt. Etwaige Erschwernisse aus solchen Terminfestlegungen innerhalb des Rahmenterminplanes sind einkalkuliert."
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "aenderungskennzeichnungen": [
+                                                                    {
+                                                                        "lbversion": 17
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "@_ftnr": "A",
+                                                            "@_mfv": ""
+                                                        }
+                                                    ],
+                                                    "@_nr": "25"
+                                                }
+                                            ]
+                                        },
+                                        "@_nr": "11"
+                                    },
+                                    {
+                                        "ulg-eigenschaften": {
+                                            "ueberschrift": "Umstände der Leistungserbringung",
+                                            "kommentar": {
+                                                "p": [
+                                                    {
+                                                        "i": "Kommentar:"
+                                                    },
+                                                    {
+                                                        "i": "In dieser Unterleistungsgruppe sollen sämtliche Umstände der Leistungserbringung, die für die Kalkulation des Angebotes von Bedeutung sind, übersichtlich zusammengefasst werden, sofern nicht aus der zusammengefassten Beschreibung der Leistung ersichtlich und soweit nicht besondere Bestimmungen oder Formulare des Auftraggebers Anwendung finden."
+                                                    }
+                                                ]
+                                            },
+                                            "aenderungskennzeichnungen": [
+                                                {
+                                                    "lbversion": 18
+                                                }
+                                            ]
+                                        },
+                                        "positionen": {
+                                            "grundtextnr": [
+                                                {
+                                                    "grundtext": {
+                                                        "langtext": {
+                                                            "p": [
+                                                                "Folgende Angaben und Anforderungen an die Art und Weise der Leistungserbringung gelten als vereinbart und sind in die Einheitspreise der zutreffenden Positionen einkalkuliert."
+                                                            ]
+                                                        }
+                                                    },
+                                                    "folgeposition": [
+                                                        {
+                                                            "pos-eigenschaften": {
+                                                                "stichwort": "Leistungstermine",
+                                                                "langtext": {
+                                                                    "p": [
+                                                                        {
+                                                                            "br": [
+                                                                                "",
+                                                                                ""
+                                                                            ],
+                                                                            "al": [
+                                                                                "",
+                                                                                ""
+                                                                            ],
+                                                                            "#text": "Termine:Frühestmöglicher Arbeitsbeginn:Verbindlicher Fertigstellungstermin:"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "aenderungskennzeichnungen": [
+                                                                    {
+                                                                        "lbversion": 18
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "@_ftnr": "A",
+                                                            "@_mfv": ""
+                                                        },
+                                                        {
+                                                            "pos-eigenschaften": {
+                                                                "stichwort": "Terminplan einvernehmlich",
+                                                                "langtext": {
+                                                                    "p": [
+                                                                        "Für Zwischentermine wird nach Auftragserteilung einvernehmlich ein verbindlicher Terminplan erstellt."
+                                                                    ]
+                                                                },
+                                                                "aenderungskennzeichnungen": [
+                                                                    {
+                                                                        "lbversion": 18
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "@_ftnr": "B",
+                                                            "@_mfv": ""
+                                                        }
+                                                    ],
+                                                    "@_nr": "01"
+                                                },
+                                                {
+                                                    "grundtext": {
+                                                        "langtext": {
+                                                            "p": [
+                                                                "Folgende Angaben und Anforderungen an die Art und Weise der Leistungserbringung gelten als vereinbart und sind in die Einheitspreise der zutreffenden Positionen einkalkuliert."
+                                                            ]
+                                                        }
+                                                    },
+                                                    "folgeposition": [
+                                                        {
+                                                            "pos-eigenschaften": {
+                                                                "stichwort": "Besondere Erschwernisse/Erleichterungen",
+                                                                "langtext": {
+                                                                    "p": [
+                                                                        {
+                                                                            "al": "",
+                                                                            "#text": "Besondere Erschwernisse/Erleichterungen:"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "aenderungskennzeichnungen": [
+                                                                    {
+                                                                        "lbversion": 18
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "@_ftnr": "A",
+                                                            "@_mfv": ""
+                                                        }
+                                                    ],
+                                                    "@_nr": "03"
+                                                }
+                                            ]
+                                        },
+                                        "@_nr": "12"
+                                    },
+                                    {
+                                        "ulg-eigenschaften": {
+                                            "ueberschrift": "Zusammenfassende Beschreibung der Leistung",
+                                            "kommentar": {
+                                                "p": [
+                                                    {
+                                                        "i": "Kommentar:"
+                                                    },
+                                                    {
+                                                        "i": "In dieser ULG kann eine allgemeine Baubeschreibung direkt eingefügt oder auf eine Beilage zum Leistungsverzeichnis verwiesen werden."
+                                                    }
+                                                ]
+                                            },
+                                            "aenderungskennzeichnungen": [
+                                                {
+                                                    "lbversion": 18
+                                                }
+                                            ]
+                                        },
+                                        "positionen": {
+                                            "grundtextnr": [
+                                                {
+                                                    "grundtext": {
+                                                        "langtext": {
+                                                            "p": [
+                                                                "Folgende Angaben und Anforderungen an die Art und Weise der Leistungserbringung gelten als vereinbart und sind in die Einheitspreise der zutreffenden Positionen einkalkuliert."
+                                                            ]
+                                                        }
+                                                    },
+                                                    "folgeposition": [
+                                                        {
+                                                            "pos-eigenschaften": {
+                                                                "stichwort": "Beschreibung der Leistung",
+                                                                "langtext": {
+                                                                    "p": [
+                                                                        {
+                                                                            "al": "",
+                                                                            "#text": "Zusammenfassende Beschreibung der Leistung:"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "aenderungskennzeichnungen": [
+                                                                    {
+                                                                        "lbversion": 18
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "@_ftnr": "A",
+                                                            "@_mfv": ""
+                                                        }
+                                                    ],
+                                                    "@_nr": "01"
+                                                }
+                                            ]
+                                        },
+                                        "@_nr": "13"
+                                    },
+                                    {
+                                        "ulg-eigenschaften": {
+                                            "ueberschrift": "Allgemeine Bestimmungen",
+                                            "vorbemerkung": {
+                                                "p": [
+                                                    "",
+                                                    "Die gegenseitigen Rechte und Pflichten der Vertragspartner ergeben sich aus sämtlichen dem Vertragsabschluss zu Grunde gelegten Unterlagen."
+                                                ]
+                                            },
+                                            "aenderungskennzeichnungen": [
+                                                {
+                                                    "lbversion": 22,
+                                                    "aenderungsumfang": "geringfügig geändert"
+                                                }
+                                            ]
+                                        },
+                                        "positionen": {
+                                            "grundtextnr": [
+                                                {
+                                                    "grundtext": {
+                                                        "langtext": {
+                                                            "p": [
+                                                                "Als Vertragsgrundlage werden folgende ÖNORMEN vereinbart."
+                                                            ]
+                                                        }
+                                                    },
+                                                    "folgeposition": [
+                                                        {
+                                                            "pos-eigenschaften": {
+                                                                "stichwort": "Vertragsgrundlage ÖNORMEN",
+                                                                "langtext": {
+                                                                    "p": [
+                                                                        "Die ÖNORM B 2110."
+                                                                    ]
+                                                                },
+                                                                "aenderungskennzeichnungen": [
+                                                                    {
+                                                                        "lbversion": 17
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "@_ftnr": "A",
+                                                            "@_mfv": ""
+                                                        }
+                                                    ],
+                                                    "@_nr": "01"
+                                                },
+                                                {
+                                                    "grundtext": {
+                                                        "langtext": {
+                                                            "p": [
+                                                                "Die im Leistungsverzeichnis angebotenen Einheits-, Pauschal- und Regiepreise gelten als:"
+                                                            ]
+                                                        }
+                                                    },
+                                                    "folgeposition": [
+                                                        {
+                                                            "pos-eigenschaften": {
+                                                                "stichwort": "Festpreise",
+                                                                "langtext": {
+                                                                    "p": [
+                                                                        {
+                                                                            "br": "",
+                                                                            "#text": "Festpreise.Für den Fall, dass die vertraglich festgelegte Fertigstellungsfrist aus Gründen, für die der Auftragnehmer nicht haftet, überschritten wird, werden jene Teile, der Leistung, die deshalb erst nach Ablauf der Frist erbracht werden, zu veränderlichen Preisen abgerechnet."
+                                                                        },
+                                                                        {
+                                                                            "al": [
+                                                                                "",
+                                                                                ""
+                                                                            ],
+                                                                            "br": "",
+                                                                            "#text": "Grundlage:Arbeitskategorie:"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "aenderungskennzeichnungen": [
+                                                                    {
+                                                                        "lbversion": 21
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "@_ftnr": "A",
+                                                            "@_mfv": ""
+                                                        },
+                                                        {
+                                                            "pos-eigenschaften": {
+                                                                "stichwort": "Veränderliche Preise",
+                                                                "langtext": {
+                                                                    "p": [
+                                                                        {
+                                                                            "br": [
+                                                                                "",
+                                                                                ""
+                                                                            ],
+                                                                            "al": [
+                                                                                "",
+                                                                                ""
+                                                                            ],
+                                                                            "#text": "Veränderliche Preise.Grundlage:Arbeitskategorie:"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "aenderungskennzeichnungen": [
+                                                                    {
+                                                                        "lbversion": 22,
+                                                                        "aenderungsumfang": "geringfügig geändert"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "@_ftnr": "B",
+                                                            "@_mfv": ""
+                                                        }
+                                                    ],
+                                                    "@_nr": "02"
+                                                },
+                                                {
+                                                    "grundtext": {
+                                                        "langtext": {
+                                                            "p": [
+                                                                "Folgende Bestimmungen sind in der Fassung einzuhalten, die zum Zeitpunkt des Beginnes der Angebotsfrist Gültigkeit hatte. Bei Fehlen einer Angebotsfrist gilt das Datum des Angebotes."
+                                                            ]
+                                                        }
+                                                    },
+                                                    "folgeposition": [
+                                                        {
+                                                            "pos-eigenschaften": {
+                                                                "stichwort": "Bestimmungen EVU",
+                                                                "langtext": {
+                                                                    "p": [
+                                                                        {
+                                                                            "al": "",
+                                                                            "#text": "Geschäftsbedingungen des örtlich zuständigen Elektroversorgungsunternehmens:"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "aenderungskennzeichnungen": [
+                                                                    {
+                                                                        "lbversion": 17
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "@_ftnr": "A",
+                                                            "@_mfv": ""
+                                                        },
+                                                        {
+                                                            "pos-eigenschaften": {
+                                                                "stichwort": "Bestimmungen Wasserversorgung",
+                                                                "langtext": {
+                                                                    "p": [
+                                                                        {
+                                                                            "al": "",
+                                                                            "#text": "Geschäftsbedingungen des örtlich zuständigen Wasserversorgungsunternehmens:"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "aenderungskennzeichnungen": [
+                                                                    {
+                                                                        "lbversion": 17
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "@_ftnr": "B",
+                                                            "@_mfv": ""
+                                                        },
+                                                        {
+                                                            "pos-eigenschaften": {
+                                                                "stichwort": "Bestimmungen Abwasserentsorgung",
+                                                                "langtext": {
+                                                                    "p": [
+                                                                        {
+                                                                            "al": "",
+                                                                            "#text": "Geschäftsbedingungen des örtlich zuständigen Abwasserentsorgungsunternehmens:"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "aenderungskennzeichnungen": [
+                                                                    {
+                                                                        "lbversion": 17
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "@_ftnr": "C",
+                                                            "@_mfv": ""
+                                                        },
+                                                        {
+                                                            "pos-eigenschaften": {
+                                                                "stichwort": "Bestimmungen Gasversorgung",
+                                                                "langtext": {
+                                                                    "p": [
+                                                                        {
+                                                                            "al": "",
+                                                                            "#text": "Geschäftsbedingungen des örtlich zuständigen Gasversorgungsunternehmens:"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "aenderungskennzeichnungen": [
+                                                                    {
+                                                                        "lbversion": 17
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "@_ftnr": "D",
+                                                            "@_mfv": ""
+                                                        },
+                                                        {
+                                                            "pos-eigenschaften": {
+                                                                "stichwort": "Bestimmungen Fernwärme",
+                                                                "langtext": {
+                                                                    "p": [
+                                                                        {
+                                                                            "al": "",
+                                                                            "#text": "Geschäftsbedingungen des örtlich zuständigen Fernwärmeversorgungsunternehmens:"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "aenderungskennzeichnungen": [
+                                                                    {
+                                                                        "lbversion": 17
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "@_ftnr": "E",
+                                                            "@_mfv": ""
+                                                        }
+                                                    ],
+                                                    "@_nr": "04"
+                                                }
+                                            ]
+                                        },
+                                        "@_nr": "14"
+                                    },
+                                    {
+                                        "ulg-eigenschaften": {
+                                            "ueberschrift": "Besondere Bestimmungen für den Einzelfall",
+                                            "kommentar": {
+                                                "p": [
+                                                    {
+                                                        "i": "Kommentar:"
+                                                    },
+                                                    {
+                                                        "i": {
+                                                            "br": "",
+                                                            "#text": "Die Formulierungen der ULG 00.14 und ULG 00.16 gehen davon aus, dass die ÖNORM B 2110 zur Vertragsgrundlage erklärt wird.Gemäß ÖNORM sind im Rahmen der Besonderen Bestimmungen des Leistungsvertrages auch etwaige Abweichungen von allgemein anerkannten oder üblichen Ausführungsregeln, insbesondere von geltenden ÖNORMEN festzulegen. Dies kann durch frei formulierte Positionen oder Vorbemerkungen auch bei den entsprechenden Leistungsgruppen oder Unterleistungsgruppen erfolgen."
+                                                        }
+                                                    },
+                                                    {
+                                                        "i": "Frei zu formulieren (z.g.):"
+                                                    },
+                                                    {
+                                                        "i": "- Probebetrieb (z.B. genaue Beschreibung, Termine/Dauer, Energieverbrauch)"
+                                                    }
+                                                ]
+                                            },
+                                            "aenderungskennzeichnungen": [
+                                                {
+                                                    "lbversion": 22,
+                                                    "aenderungsumfang": "geändert",
+                                                    "aenderungsbeschreibung": {
+                                                        "p": [
+                                                            "gelöscht: 00.1612 Außergewöhnliche Witterungsverhältnisse ..."
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "positionen": {
+                                            "grundtextnr": [
+                                                {
+                                                    "grundtext": {
+                                                        "langtext": {
+                                                            "p": [
+                                                                "Als Vertragsbestandteile gelten:"
+                                                            ]
+                                                        }
+                                                    },
+                                                    "folgeposition": [
+                                                        {
+                                                            "pos-eigenschaften": {
+                                                                "stichwort": "SiGe-Plan verbindlich",
+                                                                "langtext": {
+                                                                    "p": [
+                                                                        {
+                                                                            "al": "",
+                                                                            "#text": "Der Sicherheits- und Gesundheitsschutzplan (SiGe-Plan), in der Fassung:"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "aenderungskennzeichnungen": [
+                                                                    {
+                                                                        "lbversion": 17
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "@_ftnr": "A",
+                                                            "@_mfv": ""
+                                                        },
+                                                        {
+                                                            "pos-eigenschaften": {
+                                                                "stichwort": "Unterlage f.spätere Arbeiten",
+                                                                "langtext": {
+                                                                    "p": [
+                                                                        {
+                                                                            "al": "",
+                                                                            "#text": "Die Unterlage für spätere Arbeiten, in der Fassung:"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "aenderungskennzeichnungen": [
+                                                                    {
+                                                                        "lbversion": 17
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "@_ftnr": "B",
+                                                            "@_mfv": ""
+                                                        }
+                                                    ],
+                                                    "@_nr": "01"
+                                                },
+                                                {
+                                                    "grundtext": {
+                                                        "langtext": {
+                                                            "p": [
+                                                                "Soweit hierfür keine gesonderten Positionen im Leistungsverzeichnis vorgesehen sind, sind etwaige Baustellengemeinkosten in den Einheitspreisen einkalkuliert."
+                                                            ]
+                                                        }
+                                                    },
+                                                    "folgeposition": [
+                                                        {
+                                                            "pos-eigenschaften": {
+                                                                "stichwort": "Baustellengemeinkosten (Umlage)"
+                                                            },
+                                                            "@_ftnr": "A",
+                                                            "@_mfv": ""
+                                                        }
+                                                    ],
+                                                    "@_nr": "05"
+                                                },
+                                                {
+                                                    "grundtext": {
+                                                        "langtext": {
+                                                            "p": [
+                                                                "Die Kosten für den Verbrauch von Wasser trägt:"
+                                                            ]
+                                                        }
+                                                    },
+                                                    "folgeposition": [
+                                                        {
+                                                            "pos-eigenschaften": {
+                                                                "stichwort": "Wasserverbrauch:AG",
+                                                                "langtext": {
+                                                                    "p": [
+                                                                        "Der Auftraggeber (AG)."
+                                                                    ]
+                                                                },
+                                                                "aenderungskennzeichnungen": [
+                                                                    {
+                                                                        "lbversion": 17
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "@_ftnr": "A",
+                                                            "@_mfv": ""
+                                                        },
+                                                        {
+                                                            "pos-eigenschaften": {
+                                                                "stichwort": "Wasserverbrauch:AN Tarif",
+                                                                "langtext": {
+                                                                    "p": [
+                                                                        "Der Auftragnehmer (AN) selbst. Die Abgabe an andere erfolgt nach dem Tarif des zuständigen Versorgungsunternehmens ohne Aufschlag."
+                                                                    ]
+                                                                },
+                                                                "aenderungskennzeichnungen": [
+                                                                    {
+                                                                        "lbversion": 17
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "@_ftnr": "B",
+                                                            "@_mfv": ""
+                                                        }
+                                                    ],
+                                                    "@_nr": "06"
+                                                },
+                                                {
+                                                    "grundtext": {
+                                                        "langtext": {
+                                                            "p": [
+                                                                "Die Kosten für den Verbrauch von Strom trägt:"
+                                                            ]
+                                                        }
+                                                    },
+                                                    "folgeposition": [
+                                                        {
+                                                            "pos-eigenschaften": {
+                                                                "stichwort": "Stromverbrauch:AG",
+                                                                "langtext": {
+                                                                    "p": [
+                                                                        "Der Auftraggeber (AG)."
+                                                                    ]
+                                                                },
+                                                                "aenderungskennzeichnungen": [
+                                                                    {
+                                                                        "lbversion": 17
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "@_ftnr": "A",
+                                                            "@_mfv": ""
+                                                        },
+                                                        {
+                                                            "pos-eigenschaften": {
+                                                                "stichwort": "Stromverbrauch:AN Tarif",
+                                                                "langtext": {
+                                                                    "p": [
+                                                                        "Der Auftragnehmer (AN) selbst. Die Abgabe an anderer erfolgt nach dem Tarif des zuständigen Versorgungsunternehmens ohne Aufschlag."
+                                                                    ]
+                                                                },
+                                                                "aenderungskennzeichnungen": [
+                                                                    {
+                                                                        "lbversion": 17
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "@_ftnr": "B",
+                                                            "@_mfv": ""
+                                                        }
+                                                    ],
+                                                    "@_nr": "07"
+                                                },
+                                                {
+                                                    "grundtext": {
+                                                        "langtext": {
+                                                            "p": [
+                                                                "Unbeschadet aller für den Auftragnehmer bestehenden rechtlichen Pflichten trifft der Auftragnehmer insbesondere folgende Feuerschutzmaßnahmen ohne gesonderte Vergütung"
+                                                            ]
+                                                        }
+                                                    },
+                                                    "folgeposition": [
+                                                        {
+                                                            "pos-eigenschaften": {
+                                                                "stichwort": "Feuerschutz",
+                                                                "langtext": {
+                                                                    "p": [
+                                                                        {
+                                                                            "al": ""
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "aenderungskennzeichnungen": [
+                                                                    {
+                                                                        "lbversion": 18
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "@_ftnr": "A",
+                                                            "@_mfv": ""
+                                                        }
+                                                    ],
+                                                    "@_nr": 10
+                                                },
+                                                {
+                                                    "grundtext": {
+                                                        "langtext": {
+                                                            "p": [
+                                                                "Aufzeichnungen über wichtige Vorkommnisse:"
+                                                            ]
+                                                        }
+                                                    },
+                                                    "folgeposition": [
+                                                        {
+                                                            "pos-eigenschaften": {
+                                                                "stichwort": "Bautagesberichte AN",
+                                                                "langtext": {
+                                                                    "p": [
+                                                                        "Die Führung von Bautagesberichten durch den Auftragnehmer (AN) wird vereinbart."
+                                                                    ]
+                                                                },
+                                                                "aenderungskennzeichnungen": [
+                                                                    {
+                                                                        "lbversion": 17
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "@_ftnr": "B",
+                                                            "@_mfv": ""
+                                                        }
+                                                    ],
+                                                    "@_nr": 15
+                                                },
+                                                {
+                                                    "grundtext": {
+                                                        "langtext": {
+                                                            "p": [
+                                                                "Hinsichtlich der Überwachung durch den Auftraggeber wird vereinbart:"
+                                                            ]
+                                                        }
+                                                    },
+                                                    "folgeposition": [
+                                                        {
+                                                            "pos-eigenschaften": {
+                                                                "stichwort": "Überwachung am Erfüllungsort",
+                                                                "langtext": {
+                                                                    "p": [
+                                                                        "Die Überprüfung am Erfüllungsort gemäß ÖNORM B 2110."
+                                                                    ]
+                                                                },
+                                                                "aenderungskennzeichnungen": [
+                                                                    {
+                                                                        "lbversion": 17
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "@_ftnr": "A",
+                                                            "@_mfv": ""
+                                                        }
+                                                    ],
+                                                    "@_nr": 16
+                                                },
+                                                {
+                                                    "grundtext": {
+                                                        "langtext": {
+                                                            "p": [
+                                                                "Hinsichtlich der Gewährleistungsfristen wird vereinbart:"
+                                                            ]
+                                                        }
+                                                    },
+                                                    "folgeposition": [
+                                                        {
+                                                            "pos-eigenschaften": {
+                                                                "stichwort": "Gewährleistungsfristen vereinbarte",
+                                                                "langtext": {
+                                                                    "p": [
+                                                                        {
+                                                                            "al": "",
+                                                                            "#text": "Es gelten die Fristen von:"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "aenderungskennzeichnungen": [
+                                                                    {
+                                                                        "lbversion": 18
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "@_ftnr": "B",
+                                                            "@_mfv": ""
+                                                        }
+                                                    ],
+                                                    "@_nr": 18
+                                                },
+                                                {
+                                                    "grundtext": {
+                                                        "langtext": {
+                                                            "p": [
+                                                                "Hinsichtlich der Schlussfeststellung über die Mängelfreiheit vor Ablauf der Gewährleistungsfrist wird vereinbart:"
+                                                            ]
+                                                        }
+                                                    },
+                                                    "folgeposition": [
+                                                        {
+                                                            "pos-eigenschaften": {
+                                                                "stichwort": "Schlussfeststellung vereinbart",
+                                                                "langtext": {
+                                                                    "p": [
+                                                                        "Eine Schlussfeststellung wird gemäß ÖNORM B 2110 vereinbart."
+                                                                    ]
+                                                                },
+                                                                "aenderungskennzeichnungen": [
+                                                                    {
+                                                                        "lbversion": 17
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "@_ftnr": "B",
+                                                            "@_mfv": ""
+                                                        }
+                                                    ],
+                                                    "@_nr": 19
+                                                },
+                                                {
+                                                    "grundtext": {
+                                                        "langtext": {
+                                                            "p": [
+                                                                "Hinsichtlich einer automationsunterstützten Bauabrechnung wird vereinbart:"
+                                                            ]
+                                                        }
+                                                    },
+                                                    "folgeposition": [
+                                                        {
+                                                            "pos-eigenschaften": {
+                                                                "stichwort": "EDV-Bauabrechnung verbindlich",
+                                                                "langtext": {
+                                                                    "p": [
+                                                                        {
+                                                                            "br": "",
+                                                                            "al": "",
+                                                                            "#text": "EDV-Bauabrechnung mit Datenträgeraustausch gemäß ÖNORM verbindlich.Nähere Festlegungen:"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "aenderungskennzeichnungen": [
+                                                                    {
+                                                                        "lbversion": 18
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "@_ftnr": "B",
+                                                            "@_mfv": ""
+                                                        }
+                                                    ],
+                                                    "@_nr": 20
+                                                },
+                                                {
+                                                    "grundtext": {
+                                                        "langtext": {
+                                                            "p": [
+                                                                {
+                                                                    "br": "",
+                                                                    "#text": "Die angegebenen Sicherstellungen werden vereinbart.Soweit nicht anders bestimmt, können nach Wahl des Auftragnehmers als Sicherstellung dienen: Bargeld, Bankgarantien, Rücklassversicherungen."
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    "folgeposition": [
+                                                        {
+                                                            "pos-eigenschaften": {
+                                                                "stichwort": "Deckungsrücklass",
+                                                                "langtext": {
+                                                                    "p": [
+                                                                        {
+                                                                            "al": "",
+                                                                            "#text": "Ein Deckungsrücklass in der Höhe von:"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "aenderungskennzeichnungen": [
+                                                                    {
+                                                                        "lbversion": 17
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "@_ftnr": "B",
+                                                            "@_mfv": ""
+                                                        },
+                                                        {
+                                                            "pos-eigenschaften": {
+                                                                "stichwort": "Haftungsrücklass",
+                                                                "langtext": {
+                                                                    "p": [
+                                                                        {
+                                                                            "al": "",
+                                                                            "#text": "Ein Haftungsrücklass in der Höhe von:"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "aenderungskennzeichnungen": [
+                                                                    {
+                                                                        "lbversion": 17
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "@_ftnr": "C",
+                                                            "@_mfv": ""
+                                                        }
+                                                    ],
+                                                    "@_nr": 21
+                                                }
+                                            ]
+                                        },
+                                        "@_nr": "16"
+                                    }
+                                ]
+                            },
+                            "@_nr": "00"
+                        },
+                        {
+                            "lg-eigenschaften": {
+                                "ueberschrift": "Trockenbauarbeiten",
+                                "vorbemerkung": {
+                                    "p": [
+                                        "Version 022 (2021-12)",
+                                        "Soweit in Vorbemerkungen oder Positionstexten nicht anders angegeben, gelten für alle Leistungen dieser Gruppe folgende Regelungen.",
+                                        {
+                                            "b": "1. Nachweise:"
+                                        },
+                                        "Nachweise für die Standfestigkeit, die geforderte Feuerwiderstandsklasse und den geforderten Schallschutzwert (Rw) erfolgen, soweit sich der Wert aus der ÖNORM und den Klassifizierungsberichten der Industrie oder durch einen Prüfbericht einer Prüf-, Überwachungs- und Zertifizierungsstelle ergibt, durch den AN.",
+                                        {
+                                            "b": "2. Einkalkulierte Leistungen:"
+                                        },
+                                        "2.2 Folgende Leistungen sind (ergänzend zu den Nebenleistungen gemäß ÖNORM) in die Einheitspreise einkalkuliert:",
+                                        {
+                                            "b": "3. Ausmaß- und Abrechnungsregeln:"
+                                        },
+                                        "3.1 Höhen über 3,2 bis 5 m:",
+                                        "Die Abgeltung der Erschwernisse bei Höhen über 3,2 bis 5 m ist mit einer Aufzahlung geregelt, in die auch Gerüstmehrkosten (z.B. für Arbeitsgerüste, Aufstiegshilfen) einkalkuliert sind.",
+                                        "Bei Wänden mit einer Höhe über 3,2 bis 5 m wird die Aufzahlung von der Aufstandsfläche bis Oberkante dieser Wand, also die gesamte Wandhöhe und nicht nur die höher gelegenen Teilflächen, verrechnet.",
+                                        "Wände mit einer Höhe von Null bis über 3,2 m werden durch gedachte lotrechte seitliche Begrenzungen gegenüber etwaigen Wänden mit einer Höhe von Null bis 3,2 m, auch bei schrägem oberen Abschluss, abgegrenzt.",
+                                        "3.2 Öffnungen:",
+                                        "Öffnungen, für oder ohne Einbauten, bis 4 m2 werden hohl für voll abgerechnet.",
+                                        "Das Ausbilden von Randausbildungen und Leibungen bis 30 cm Breite, einschließlich Kantenausbildung und etwaige Anschlussfugen an Einbauteile, ist in die Einheitspreise einkalkuliert.",
+                                        "3.3 Wände:",
+                                        "Wände werden in ihrer größten Ansichtsfläche, d.h. ohne Abzug etwaiger Abschrägungen, bemessen."
+                                    ],
+                                    "ul": {
+                                        "li": [
+                                            "Höhen bis 3,2 m, wenn keine Höhe angegeben ist",
+                                            "Gerüste (z.B. Arbeitsgerüste, Aufstiegshilfen) für die angegebene Höhe, einschließlich erhöhtem Aufwand für den Materialtransport und sonstiger Erschwernisse",
+                                            "bei Ständerwänden und Bekleidungen das Herstellen und Schließen von Öffnungen bis 0,01 m2",
+                                            "bei Ständerwänden eine Dämmschicht aus 5 cm Mineralwolle",
+                                            "ein starrer Anschluss der Profile mit Dichtungsstreifen an Wand, Decke und Boden",
+                                            "das Verspachteln von Plattenstößen und Befestigungsmitteln erfolgt gemäß ÖNORM mit der Qualitätsstufe 2",
+                                            "bei Eckausbildungen eingespachtelte Glasfaser- oder Papierstreifen",
+                                            "das Ausgleichen von Unebenheiten mit einer Ausgleichsschicht bis 20 mm bei Wandbekleidungen",
+                                            "das Erstellen von Wänden in 2 Arbeitstakten"
+                                        ]
+                                    }
+                                },
+                                "aenderungskennzeichnungen": [
+                                    {
+                                        "lbversion": 22,
+                                        "aenderungsumfang": "geändert",
+                                        "aenderungsbeschreibung": {
+                                            "p": [
+                                                "z.B.",
+                                                {
+                                                    "u": "allgemein:"
+                                                },
+                                                "Nachweise für die Standfestigkeit, die geforderte Feuerwiderstandsklasse und den geforderten Schallschutzwert (Rw) erfolgen, soweit sich der Wert aus der ÖNORM und den Klassifizierungsberichten der Industrie oder durch einen Prüfbericht einer Prüf-, Überwachungs- und Zertifizierungsstelle ergibt, durch den AN.",
+                                                "Wände werden in ihrer größten Ansichtsfläche, d.h. ohne Abzug etwaiger Abschrägungen, bemessen.",
+                                                "Anschlussflächen an Deckenschürzen mit einer Breite über 100 cm werden nur als Deckenfläche abgerechnet.",
+                                                {
+                                                    "u": "geänderte Positionen:"
+                                                },
+                                                "39.2431 Drempelwand mit GKF Platten, 15 mm dick, 1fach beplankt, einschließlich Unterkonstruktion",
+                                                "39.2523 Aufzahlung auf Decken aus Gipskartonplatten (GKPl.) für das Ausbilden von senkrechten und/oder geneigten Deckenschürzen aus Gipskartonplatten …",
+                                                "39.2533 Einbau von waagrechten Schraubgründen in Metallständerwände (Positionsstichwort angepasst)",
+                                                "39.2941A Aufzahlung auf Ständerwände für die Verwendung von feuchtigkeitsbeständigen Platten. (imprägnierte Platten/Wasseraufnahmefähigkeit bis 10%)",
+                                                {
+                                                    "u": "neue Positionen:"
+                                                },
+                                                "39.2414 Nicht raumhohe Vorsatzschalen für dahinterliegenden Sanitäreinbauteilen …",
+                                                "39.2524 Aufzahlung auf Decken aus Gipskartonplatten (GKPl.) für das Ausbilden von waagrechten und/oder geneigten Anschlussflächen an Deckenschürzen aus Gipskartonplatten …",
+                                                "39.2932 Einbau von Spezialtraversen für schwere Konsollasten",
+                                                "39.2941C Aufzahlung auf Ständerwände für die Verwendung von feuchtigkeitsbeständigen Platten. (Platten mit Vliesarmierung/Wasseraufnahmefähigkeit bis 5%, schimmelresistent)",
+                                                "39.2941D Aufzahlung auf Ständerwände für die Verwendung von feuchtigkeitsbeständigen Platten. (Platten zementgebunden/feuchteunempfindlich, schimmelresistent)",
+                                                {
+                                                    "u": "nicht (mehr) standardisiert:"
+                                                },
+                                                "39.3131 Dämmung in Distanzboden (doppelt /nur in 39.32)"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "ulg-liste": {
+                                "ulg": [
+                                    {
+                                        "ulg-eigenschaften": {
+                                            "ueberschrift": "Wählbare Vorbemerkungen"
+                                        },
+                                        "positionen": {
+                                            "grundtextnr": [
+                                                {
+                                                    "grundtext": {
+                                                        "langtext": {
+                                                            "p": [
+                                                                "Folgende Angaben und Anforderungen an die Art und Weise der Leistungserbringung gelten als vereinbart und sind in die Einheitspreise einkalkuliert."
+                                                            ]
+                                                        }
+                                                    },
+                                                    "folgeposition": [
+                                                        {
+                                                            "pos-eigenschaften": {
+                                                                "stichwort": "Nachweise des Auftragnehmers",
+                                                                "langtext": {
+                                                                    "p": [
+                                                                        "Der Auftragnehmer legt dem Auftraggeber zu erbringende Nachweise (z.B. Prüfberichte) innerhalb von 14 Kalendertagen nach Aufforderung vor."
+                                                                    ]
+                                                                }
+                                                            },
+                                                            "@_ftnr": "A",
+                                                            "@_mfv": ""
+                                                        },
+                                                        {
+                                                            "pos-eigenschaften": {
+                                                                "stichwort": "Normen",
+                                                                "langtext": {
+                                                                    "p": [
+                                                                        "Grundsätzlich sind bei der Ausführung von Trockenbauarbeiten alle relevanten ÖNormen und der Stand der Technik zu beachten - insbesondere folgende Normen:"
+                                                                    ],
+                                                                    "ul": {
+                                                                        "li": [
+                                                                            "ÖNORM B 3410, Gipsplatten für Trockenbausysteme (Gipskartonplatten) – Arten, Anforderungen und Prüfungen",
+                                                                            "ÖNORM B 3415, Gipsplatten und Gipsplattensysteme – Regeln für die Planung und Verarbeitung",
+                                                                            "ÖNORM B 5330-10, Innentüren – Teil 10: Stahlzargen für Ständerwandsysteme mit Gipsplatten",
+                                                                            "ÖNORM B 6000, Werkmäßig hergestellte Dämmstoffe für den Wärme- und/oder Schallschutz im Hochbau – Produktarten, Leistungsanforderungen und Verwendungsbestimmungen",
+                                                                            "ÖNORM B 8110 (alle Teile), Wärmeschutz im Hochbau – Wasserdampfdiffusion, -konvektion und Kondensationsschutz",
+                                                                            "ÖNORM B 8115-2, Schallschutz und Raumakustik im Hochbau – Teil 2: Anforderungen an den Schallschutz",
+                                                                            "ÖNORM DIN 18202, Toleranzen im Hochbau – Bauwerke",
+                                                                            "ÖNORM EN 13963, Materialien für das Verspachteln von Gipsplattenfugen – Begriffe, Anforderungen und Prüfverfahren",
+                                                                            "ÖNORM EN 14496, Kleber auf Gipsbasis für Verbundplatten zur Wärme- und Schalldämmung und Gipsplatten – Begriffe, Anforderungen und Prüfverfahren"
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "herkunftskennzeichen": "Z"
+                                                            },
+                                                            "@_ftnr": "C",
+                                                            "@_mfv": ""
+                                                        },
+                                                        {
+                                                            "pos-eigenschaften": {
+                                                                "stichwort": "Prüf- und Warnpflicht",
+                                                                "langtext": {
+                                                                    "p": [
+                                                                        "In Ergänzung zur ÖNORM B 2110:2013, Abschnitt 6.2.4 oder ÖNORM B 2118:2013, Abschnitt 6.2.4 gilt:",
+                                                                        "Die Prüfung erstreckt sich unter Berücksichtigung der vorgesehenen Ausführungsart auf den vorhandenen Untergrund mit branchenüblichen, einfachen Methoden, z. B. Augenschein, Messen, Klopfen, Ritzen.",
+                                                                        "Zu prüfen sind insbesondere:",
+                                                                        "1) Maße, Winkelrechtheit und Ebenheit;",
+                                                                        "2) Festigkeit;",
+                                                                        "3) Vorhandensein von Spannungs- oder Setzungsrissen;",
+                                                                        "4) Befestigungsmöglichkeiten für die Unterkonstruktionen;",
+                                                                        "5) Feuchtigkeit;",
+                                                                        "6) grobe Verunreinigungen."
+                                                                    ]
+                                                                },
+                                                                "herkunftskennzeichen": "Z"
+                                                            },
+                                                            "@_ftnr": "D",
+                                                            "@_mfv": ""
+                                                        },
+                                                        {
+                                                            "pos-eigenschaften": {
+                                                                "stichwort": "Technische Ausführungsbestimmungen",
+                                                                "langtext": {
+                                                                    "p": [
+                                                                        "Es gelten folgende Ausführungsbestimmungen:",
+                                                                        "1) Trockenbauarbeiten mittels Ortschäumen, Klebe- und Spachtelmaterialien dürfen nur bei einer Luft- und Bauteiltemperatur von mindestens +5 °C ausgeführt werden.",
+                                                                        "2) Wand-, Decken-, Boden- bzw. Brand-, Schall- und Wärmeschutzsysteme, für welche Verarbeitungsrichtlinien ihres Herstellers bestehen, sind nach diesen Richtlinien auszuführen.",
+                                                                        "3) Die Unterkonstruktion muss hinsichtlich ihrer Verankerung mit dem Untergrund, ihrer Stabilität und der Befestigung der Bekleidung entsprechen.",
+                                                                        "4) Bewegungsfugen des Bauwerkes müssen an gleicher Stelle und mit der gleichen Bewegungsmöglichkeit übernommen werden.",
+                                                                        "5) Einzubauende Dämmstoffe sind über die gesamte Fläche zu verlegen, an angrenzende Bauteile anzuschließen und gegen Öffnungen abzuschließen. Bei mehrlagiger Ausführung sind alle Stoßfugen versetzt anzuordnen.",
+                                                                        "6) Bei Anschlüssen von Decken und Wänden aus verschiedenen Materialien sowie beim Anarbeiten an Einbauteile sind die materialspezifischen Eigenschaften zu beachten und geeignete Maßnahmen dergestalt zu setzen, dass allenfalls auftretende konstruktiv bedingte Risse der Anschlusslinie folgen.",
+                                                                        "7) Bekleidungen in mehrlagiger Ausführung sind stoßversetzt anzubringen."
+                                                                    ]
+                                                                },
+                                                                "herkunftskennzeichen": "Z"
+                                                            },
+                                                            "@_ftnr": "E",
+                                                            "@_mfv": ""
+                                                        },
+                                                        {
+                                                            "pos-eigenschaften": {
+                                                                "stichwort": "Nebenleistungen",
+                                                                "langtext": {
+                                                                    "p": [
+                                                                        "In Ergänzung der ÖNORM B 2110:2013, Abschnitt 6.2.3 oder ÖNORM B 2118:2013, Abschnitt 6.2.3 ist folgende Nebenleistung mit dem vereinbarten Preis abgegolten:",
+                                                                        "Anfertigen der erforderlichen Werkzeichnungen."
+                                                                    ]
+                                                                },
+                                                                "herkunftskennzeichen": "Z"
+                                                            },
+                                                            "@_ftnr": "F",
+                                                            "@_mfv": ""
+                                                        },
+                                                        {
+                                                            "pos-eigenschaften": {
+                                                                "stichwort": "Ausbilden von Dehnfugen Wände, Decken",
+                                                                "langtext": {
+                                                                    "p": [
+                                                                        "Die Dehnfugen des Rohbaus sind in die Trockenbausysteme zu übernehmen. Aufgrund der spezifischen Materialeigenschaften sowie der Baustellen- und Nutzungsbedingungen sind in Wand- und Deckenflächen Dehnfugen in der Beplankung vorzusehen.",
+                                                                        "Bei Wand- und Deckenflächen ohne besondere Einbauten mit freien, beweglichen Rändern ist die Anordnung von Dehnfugen im Abstand von maximal 15 m im Allgemeinen ausreichend. Zusätzlich ist bei Grundrissen ein Längen-Breiten-Verhältnis von maximal 10:1 einzuhalten.",
+                                                                        "Bei gleitendem Anschluss ist zwischen der Gipsplatte und dem angrenzenden Bauteil eine Dehnfuge vorzusehen, die die zu erwartenden Bewegungen bzw. Verformungen der Anschlussbauteile aufnehmen kann.",
+                                                                        "Das Ausbilden von Dehnfugen im Bereich von Trockenbauwänden, Vorsatzschalen und Wandbekleidungen sowie in abgehängten Decken oder Deckenverkleidungen aller Art, hergestellt nach den Verarbeitungsrichtlinien des Gipsplattenherstellers, sind in die Preise des Angebots einkalkuliert und werden nicht gesondert vergütet."
+                                                                    ]
+                                                                },
+                                                                "herkunftskennzeichen": "Z"
+                                                            },
+                                                            "@_ftnr": "M",
+                                                            "@_mfv": ""
+                                                        }
+                                                    ],
+                                                    "@_nr": "01"
+                                                },
+                                                {
+                                                    "grundtext": {
+                                                        "langtext": {
+                                                            "p": [
+                                                                "Sonstige Ausführungsbestimmungen"
+                                                            ]
+                                                        },
+                                                        "herkunftskennzeichen": "Z"
+                                                    },
+                                                    "folgeposition": [
+                                                        {
+                                                            "pos-eigenschaften": {
+                                                                "stichwort": "Dampfbremse",
+                                                                "langtext": {
+                                                                    "p": [
+                                                                        "Die Dampfbremse muss den Dämmstoff abschließen. Sie muss an Durchdringungen, Übergängen und Anschlüssen dicht angeschlossen sein. Auch im Bereich von Unterkonstruktionen müssen Dampfbremsen voll wirksam sein."
+                                                                    ]
+                                                                },
+                                                                "herkunftskennzeichen": "Z"
+                                                            },
+                                                            "@_ftnr": "B",
+                                                            "@_mfv": ""
+                                                        },
+                                                        {
+                                                            "pos-eigenschaften": {
+                                                                "stichwort": "Maßtolernazen",
+                                                                "langtext": {
+                                                                    "p": [
+                                                                        "1) Hinsichtlich der Anforderungen für Grenzabmaße, Winkel- und Ebenheitstoleranzen gilt die ÖNORM DIN 18202.",
+                                                                        "2) Ohne besondere Vereinbarungen sind die Toleranzen gemäß ÖNORM DIN 18202:2022, Tabelle 3, Spalten 2 bis 5 wie folgt einzuhalten:",
+                                                                        "– die Ebenheitstoleranzen gemäß Zeilen 3 und 6;",
+                                                                        "– die Maßtoleranzen für die Genauigkeit von Kanten und Ichsen gemäß Zeile 7.",
+                                                                        "3) Bei der Ebenheit gelten die Toleranzen für Messpunktabstände über 15 m nur mit ausdrücklicher Festlegung."
+                                                                    ]
+                                                                },
+                                                                "herkunftskennzeichen": "Z"
+                                                            },
+                                                            "@_ftnr": "D",
+                                                            "@_mfv": ""
+                                                        }
+                                                    ],
+                                                    "@_nr": "03"
+                                                },
+                                                {
+                                                    "grundtext": {
+                                                        "langtext": {
+                                                            "p": [
+                                                                "Die Ausmaßfeststellung hat nach Längenmaß in Meter oder nach Flächenmaß in Quadratmeter oder nach Raummaß in Kubikmeter, jeweils auf zwei Dezimalen gerundet, oder nach Masse in Kilogramm oder nach Zeit in Stunden oder nach Stück in ganzen Einheiten zu erfolgen.",
+                                                                "Der Umfang der Leistung ist grundsätzlich nach dem Leistungsverzeichnis und den für die Ausführung maßgeblichen Plänen festzustellen. Sofern diese Unterlagen nicht vorhanden oder nicht ausreichend sind, hat die Ausmaßfeststellung auf Grund von Naturaufnahmen zu erfolgen.",
+                                                                "Das Runden hat gemäß ÖNORM A 6403 zu erfolgen.",
+                                                                "Bei der Ausmaßfeststellung ist jede Wand, Decke oder jeder Boden sowie jede Öffnung, Nische u. dgl. getrennt zu betrachten."
+                                                            ]
+                                                        },
+                                                        "herkunftskennzeichen": "Z"
+                                                    },
+                                                    "folgeposition": [
+                                                        {
+                                                            "pos-eigenschaften": {
+                                                                "stichwort": "Ausmaß und Abrechnung",
+                                                                "langtext": {
+                                                                    "p": [
+                                                                        {
+                                                                            "b": "Ausmaßfeststellung:"
+                                                                        },
+                                                                        "- Längenmaß: Längenmaße werden in der größten, abgewickelten Länge festgestellt. Über Fugen wird durchgemessen. Nicht abzuziehen sind Unterbrechungen mit einer Einzellänge bis 1,0 m.",
+                                                                        "- Flächenmaß: Die Wandlänge ist in ihrer Abwicklung festzustellen, wobei die Vor- und Rücksprünge mit zu messen sind. Wandhöhen über 3,20 m sind getrennt festzustellen. Die Wandhöhe wird von der Aufstandsfläche bis zur Oberkante gemessen.",
+                                                                        "- Raummaß: Dämmungen nach Schäum-, Schütt- oder Stopfverfahren in Schlitzen, Schächten, Kanälen sowie in Fußboden-, Wand- und Deckenhohlräumen u. dgl. werden nach Raummaß festgestellt.",
+                                                                        "- Nach Masse werden Stahlkonstruktionen festgestellt.",
+                                                                        "",
+                                                                        {
+                                                                            "b": "Abrechnung:"
+                                                                        },
+                                                                        "- Die ausgeführten Leistungen sind mit den ermittelten Ergebnissen der Ausmaßfeststellung abzurechnen."
+                                                                    ]
+                                                                },
+                                                                "herkunftskennzeichen": "Z"
+                                                            },
+                                                            "@_ftnr": "A",
+                                                            "@_mfv": ""
+                                                        }
+                                                    ],
+                                                    "@_nr": 10
+                                                }
+                                            ]
+                                        },
+                                        "@_nr": "00"
+                                    }
+                                ]
+                            },
+                            "@_nr": 39
+                        }
+                    ]
+                }
+            }
+        },
+        "@_xmlns": "http://www.oenorm.at/schema/A2063/2021-03-01"
+    }
+}

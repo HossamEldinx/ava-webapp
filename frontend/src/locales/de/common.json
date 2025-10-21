@@ -1,0 +1,21 @@
+{
+    "modal": {
+        "createNewPosition": "Neue Position erstellen"
+    },
+    "buttons": {
+        "save": "Speichern",
+        "cancel": "Abbrechen",
+        "delete": "Löschen",
+        "edit": "Bearbeiten",
+        "create": "Erstellen",
+        "update": "Aktualisieren",
+        "close": "Schließen"
+    },
+    "messages": {
+        "loading": "Wird geladen...",
+        "error": "Ein Fehler ist aufgetreten",
+        "success": "Vorgang erfolgreich abgeschlossen",
+        "noData": "Keine Daten verfügbar",
+        "confirmDelete": "Sind Sie sicher, dass Sie dieses Element löschen möchten?"
+    }
+}

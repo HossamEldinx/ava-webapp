@@ -1,0 +1,20 @@
+{
+    "title": "Automated BoQ Creation with AI & BIM",
+    "subtitle": "Your personal AI assistant for creating Bills of Quantities.",
+    "boq": {
+        "title": "Bill of Quantities",
+        "description": "Manage and analyze your project's Bill of Quantities with ease. Upload, track, and process all your BoQ files in one place.",
+        "button": "Go to BoQ Page"
+    },
+    "elements": {
+        "title": "Element Management",
+        "description": "Organize and manage all your construction elements, including their properties and associated regulations.",
+        "button": "Go to Elements"
+    },
+    "createPosition": {
+        "title": "Create New Position",
+        "description": "Add a new position with detailed properties and attributes.",
+        "button": "Create Position",
+        "seeAllButton": "See All"
+    }
+}

@@ -1,0 +1,115 @@
+onlv_js/
+
+# ============================================================================
+# ENVIRONMENT VARIABLES - SECURITY CRITICAL
+# ============================================================================
+# Never commit .env files - they contain sensitive credentials
+.env
+.env.local
+.env.*.local
+.env.production.local
+.env.development.local
+.env.test.local
+
+# ============================================================================
+# PYTHON
+# ============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.pytest_cache/
+.coverage
+.env.bak
+.venv
+env/
+venv/
+ENV/
+env.bak/
+
+# ============================================================================
+# NODE.JS / REACT / FRONTEND
+# ============================================================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+frontend/node_modules/
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+.pnp
+.pnp.js
+frontend/build/
+frontend/.DS_Store
+
+# ============================================================================
+# IDE & EDITOR
+# ============================================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+.DS_Store
+Thumbs.db
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# ============================================================================
+# OS
+# ============================================================================
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+Desktop.ini
+.directory
+
+# ============================================================================
+# LOGS
+# ============================================================================
+*.log
+*.logs
+logs/
+
+# ============================================================================
+# TEMPORARY FILES
+# ============================================================================
+*.tmp
+*.temp
+tmp/
+temp/
+*.bak
+*.backup
+
+# ============================================================================
+# DATABASE
+# ============================================================================
+*.db
+*.sqlite
+*.sqlite3
+db.sqlite3

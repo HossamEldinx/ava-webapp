@@ -1,0 +1,650 @@
+.onlv-viewer-container {
+    font-family: sans-serif;
+    color: #f3f4f6;
+    background-color: #1f2937;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #374151;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.viewer-controls { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; padding-bottom: 10px; border-bottom: 1px solid #4b5563; flex-wrap: nowrap; gap: 10px; }
+.filter-input { padding: 8px 12px; border-radius: 4px; border: 1px solid #374151; background-color: #1f2937; color: #f3f4f6; min-width: 250px; }
+.filter-input:disabled { background-color: #4b5563; cursor: not-allowed; }
+.view-actions { display: flex; flex-wrap: nowrap; align-items: center; gap: 8px; }
+.view-actions button { padding: 6px 12px; background-color: #2563eb; border: none; color: #ffffff; border-radius: 4px; cursor: pointer; }
+.view-actions button:hover { background-color: #1d4ed8; }
+.view-actions button:disabled { background-color: #4b5563; cursor: not-allowed; }
+
+.loading-message, .error-message, .info-message { text-align: center; padding: 20px; border-radius: 4px; margin-top: 15px; }
+.loading-message { background-color: #2563eb; }
+.error-message { background-color: #dc2626; color: white; }
+.info-message { background-color: #2563eb; color: white; }
+
+.onlv-content-wrapper {
+    margin-top: 15px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.onlv-content-wrapper.collapsed .onlv-header-sections {
+    display: none; /* Hide header sections when collapsed */
+}
+
+.onlv-header-sections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-shrink: 0;
+    overflow-y: auto;
+    max-height: 40vh;
+}
+.info-section { background-color: #374151; padding: 12px; border-radius: 6px; border: 1px solid #4b5563; }
+.info-section h4 { margin-top: 0; margin-bottom: 8px; color: #64748b; border-bottom: 1px solid #4b5563; padding-bottom: 4px; }
+.info-section dl { margin: 0; }
+.info-section dt { font-weight: bold; color: #9ca3af; float: left; width: 90px; clear: left; }
+.info-section dd { margin-left: 100px; margin-bottom: 4px; color: #d1d5db;}
+.compact-info-table { width: 100%; border-collapse: collapse; font-size: 0.9em;}
+.compact-info-table th, .compact-info-table td { border: 1px solid #4b5563; padding: 4px 6px; text-align: left;}
+.compact-info-table th { background-color: #475569; color: #ffffff;}
+
+
+.grid-container {
+    margin-top: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.grid-container h3 { margin-bottom: 10px; color: #64748b; flex-shrink: 0; }
+.table-wrapper {
+    overflow: auto;
+    flex: 1;
+    border: 1px solid #4b5563;
+    border-radius: 4px;
+    /* Custom scrollbar styling */
+    scrollbar-width: thin;
+    scrollbar-color: #6b7280 #374151;
+}
+
+/* Webkit scrollbar styling for better appearance */
+.table-wrapper::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+.table-wrapper::-webkit-scrollbar-track {
+    background: #374151;
+    border-radius: 6px;
+    border: 1px solid #4b5563;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #6b7280 0%, #4b5563 100%);
+    border-radius: 6px;
+    border: 1px solid #374151;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.table-wrapper::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #9ca3af 0%, #6b7280 100%);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.table-wrapper::-webkit-scrollbar-thumb:active {
+    background: linear-gradient(180deg, #d1d5db 0%, #9ca3af 100%);
+}
+
+.table-wrapper::-webkit-scrollbar-corner {
+    background: #374151;
+    border: 1px solid #4b5563;
+}
+.onlv-grid-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1f2937;
+    min-width: 800px; /* Ensure minimum width for horizontal scrolling */
+}
+.onlv-grid-table th, .onlv-grid-table td { border: 1px solid #4b5563; padding: 6px 8px; text-align: left; vertical-align: top; font-size: 0.9em; }
+.onlv-grid-table th { background-color: #475569; color: #ffffff; position: sticky; top: 0; z-index: 10;}
+
+.col-nr { width: 8%; min-width: 80px; font-family: monospace; }
+.col-description { width: 50%; color: #ffffff; }
+.col-menge { width: 7%; text-align: right; }
+.col-einheit { width: 5%; text-align: center; }
+.col-type { width: 5%; text-align: center; font-size: 0.8em; font-style: italic; }
+.col-herkunft { width: 5%; text-align: center; font-size: 0.8em; }
+.col-grafik { width: 10%; }
+
+
+.lg-row > td:first-child::before { font-weight: bold; color: #64748b; margin-right: 5px; }
+.ulg-row > td:first-child::before { font-weight: bold; color: #475569; margin-right: 5px; }
+.lg-row, .ulg-row { background-color: #374151; }
+.lg-row {
+    padding: 20px;
+}
+
+.vb-row { font-style: italic; color: #9ca3af; font-size: 0.85em; background-color: #374151; }
+.gt-desc-row { font-style: italic; color: #9ca3af; background-color: #374151; }
+.gt-static-desc-row { font-style: italic; color: #9ca3af; background-color: #374151; }
+.position-row {
+}
+
+/* Styles for collapsible langtext row */
+.langtext-row {
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out; /* Adjust duration and timing function as needed */
+}
+
+/* When the row is collapsed (initially or via toggle) */
+.langtext-row:not([aria-expanded="true"]) {
+    max-height: 0;
+}
+
+/* When the row is expanded */
+.langtext-row[aria-expanded="true"] {
+    /* Set a max-height large enough to accommodate the content */
+    /* A value like 500px or 1000px is often used as a safe bet */
+    max-height: 1000px; /* Adjust if content can be taller */
+}
+
+
+.fixed-position-row {
+    background-color: #475569; /* Slate-600 - A muted color for fixed positions */
+    color: #ffffff;
+}
+
+.eventual-position {
+    background-color: #374151; /* Medium gray */
+    font-style: italic;
+    color: #d1d5db;
+}
+
+.not-offered-position {
+    text-decoration: line-through;
+    color: #9ca3af;
+    background-color: #4b5563;
+}
+
+.wahl-position {
+    background-color: #059669; /* Green-600 for selection positions */
+    color: #ffffff;
+}
+
+.grund-position {
+    font-weight: bold;
+    background-color: #334155; /* Slate-700 */
+    color: #ffffff;
+}
+
+.description-cell-wrapper {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Vertically align items */
+    gap: 5px; /* Add some space between the icon and text */
+}
+
+.description-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.ulg-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.stichwort {
+    font-weight: bold;
+    color: #f3f4f6;
+}
+
+.langtext-display {
+    /* Allow wrapping */
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.langtext-content {
+    padding: 5px 0;
+    margin-top: 2px;
+}
+
+/* Styling for grundtext and folgeposition langtext */
+.grundtext-langtext {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.folgeposition-langtext {
+    margin-top: 10px;
+    padding-top: 5px;
+    position: relative;
+    border-top: none;
+}
+
+.folgeposition-langtext::before {
+
+    margin-bottom: 5px;
+}
+
+.no-langtext-message {
+    color: #9ca3af;
+    font-style: italic;
+}
+
+.vorbemerkung-inline em {
+    font-weight: bold;
+    color: #9ca3af;
+    display: block;
+    margin-bottom: 3px;
+}
+
+.vorbemerkung-content {
+    margin-left: 10px;
+}
+
+.bieterluecke {
+    color: #9ca3af; /* Gray-400 */
+    font-style: italic;
+    border: 1px dashed #9ca3af;
+    padding: 2px 4px;
+    display: inline-block;
+    margin-top: 4px;
+}
+
+.expand-toggle {
+    background: none;
+    border: none;
+    color: #64748b; /* Slate-500 */
+    cursor: pointer;
+    font-size: 1.1em; /* Increased icon size for better visibility */
+    padding: 2px; /* Add small padding for better click target */
+    margin-right: 5px;
+    width: 1.5em; /* Increased click target width */
+    height: 1.5em; /* Increased click target height */
+    display: inline-flex; /* Use inline-flex to center icon */
+    align-items: center; /* Vertically center icon */
+    justify-content: center; /* Horizontally center icon */
+    border-radius: 2px; /* Add slight border radius */
+    transition: background-color 0.2s, color 0.2s; /* Add smooth transitions */
+}
+
+.expand-toggle:hover {
+    background-color: #64748b; /* Slate-500 */
+    color: #475569; /* Slate-600 */
+}
+
+.expand-toggle:focus {
+    outline: 2px solid #64748b; /* Slate-500 */
+    outline-offset: 1px;
+}
+
+/* Ensure icons are visible */
+.expand-toggle svg {
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+    pointer-events: none; /* Prevent icon from interfering with button clicks */
+}
+
+/* Debug styles - remove these after testing */
+.expand-toggle {
+    /* Temporary border to see button boundaries */
+    /* border: 1px solid red !important; */
+}
+
+.indent-spacer {
+    display: inline-block;
+    width: 25px;
+    /* Match button width + margin */
+    height: 1em;
+}
+
+.grafik-links-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.grafik-thumbnail img {
+    border: 1px solid #9ca3af;
+}
+
+.grafik-caption {
+    font-size: 0.8em;
+    color: #9ca3af;
+    display: block;
+    text-align: center;
+}
+
+.grafik-ref {
+    color: #9ca3af;
+    font-style: italic;
+    font-size: 0.85em;
+}
+
+.grafik-gallery-section {
+    margin-bottom: 20px;
+}
+
+.grafik-gallery-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.grafik-full {
+    text-align: center;
+    border: 1px solid #4b5563;
+    padding: 5px;
+    background-color: #374151;
+    border-radius: 4px;
+}
+
+.grafik-full img {
+    margin-bottom: 5px !important;
+}
+
+.edit-icon {
+    color: #64748b;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 0.9em;
+}
+
+.edit-icon:hover {
+    color: #475569;
+}
+
+/* ULG Position Management Styles */
+.ulg-position-buttons {
+    display: flex;
+    gap: 5px;
+    margin-left: auto;
+    align-self: flex-start;
+}
+
+.add-position-btn {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 3px 6px;
+    background-color: #475569; /* Slate-600 */
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8em;
+    transition: background-color 0.2s;
+}
+
+.add-position-btn:hover {
+    background-color: #334155; /* Slate-700 */
+}
+
+.standalone-btn {
+    background-color: #475569; /* Slate-600 */
+}
+
+.standalone-btn:hover {
+    background-color: #334155; /* Slate-700 */
+}
+
+.shared-btn {
+    background-color: #475569; /* Slate-600 */
+}
+
+.shared-btn:hover {
+    background-color: #334155; /* Slate-700 */
+}
+
+.folgeposition-btn {
+    background-color: #475569; /* Slate-600 */
+    margin-left: 5px;
+}
+
+.folgeposition-btn:hover {
+    background-color: #334155; /* Slate-700 */
+}
+
+/* Modal Styles for Position Management */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #1f2937;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border: 1px solid #374151;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #4b5563;
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #64748b;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    color: #9ca3af;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+}
+
+.close-button:hover {
+    color: #374151;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    padding: 0 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #374151;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #4b5563;
+    background-color: #374151;
+    color: #f3f4f6;
+    font-size: 0.9em;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #64748b;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 15px 20px;
+    border-top: 1px solid #4b5563;
+}
+
+.cancel-button {
+    padding: 8px 16px;
+    background-color: #4b5563; /* Gray-600 */
+    border: none;
+    color: #f3f4f6;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cancel-button:hover {
+    background-color: #6b7280; /* Gray-500 */
+}
+
+.save-button {
+    padding: 8px 16px;
+    background-color: #059669; /* Green-600 */
+    border: none;
+    color: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.save-button:hover {
+    background-color: #047857; /* Green-700 */
+}
+
+/* Edit icon styles for position management */
+.edit-icon-stichwort,
+.edit-icon-inline {
+    color: #64748b;
+    cursor: pointer;
+    margin-left: 8px;
+    font-size: 0.9em;
+}
+
+.edit-icon-stichwort:hover,
+.edit-icon-inline:hover {
+    color: #475569;
+}
+
+/* Position form styles */
+fieldset {
+    border: 1px solid #4b5563;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #374151;
+}
+
+fieldset legend {
+    color: #64748b;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+.form-group small {
+    display: block;
+    color: #9ca3af;
+    font-size: 0.8em;
+    margin-top: 4px;
+}
+
+textarea {
+    font-family: inherit;
+    resize: vertical;
+    min-height: 100px;
+}
+
+.viewer-control-button {
+    display: flex;
+    align-items: center;
+    font-size: 0.9em; /* Adjust font size as needed */
+}
+
+/* Additional styles for better scrolling and layout */
+.image-carousel-section-wrapper {
+    flex-shrink: 0;
+    max-height: 50vh;
+    overflow-y: auto;
+}
+
+.fixed-rules-section-wrapper {
+    flex-shrink: 0;
+    max-height: 50vh;
+    overflow-y: auto;
+}
+
+/* Ensure smooth scrolling */
+.table-wrapper {
+    scroll-behavior: smooth;
+}
+
+/* Better mobile scrolling */
+@media (max-width: 768px) {
+    .onlv-viewer-container {
+        padding: 10px;
+    }
+    
+    .table-wrapper {
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .table-wrapper::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+    
+    .onlv-grid-table {
+        min-width: 600px;
+    }
+}
+
+/* Additional scrollbar improvements for the main container */
+.onlv-viewer-container::-webkit-scrollbar {
+    width: 12px;
+}
+
+.onlv-viewer-container::-webkit-scrollbar-track {
+    background: #1f2937;
+    border-radius: 6px;
+}
+
+.onlv-viewer-container::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #4b5563 0%, #374151 100%);
+    border-radius: 6px;
+    border: 1px solid #1f2937;
+}
+
+.onlv-viewer-container::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #6b7280 0%, #4b5563 100%);
+}
