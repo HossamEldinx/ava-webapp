@@ -24,10 +24,6 @@
 
 The Ava App is a sophisticated full-stack web application designed for professional management and processing of construction documents. It combines a robust Python FastAPI backend with a modern React frontend to provide a seamless user experience for document processing, data management, and advanced file analysis.
 
-### What is ONLV?
-
-ONLV (Outline of Services and Performance) documents are essential in construction and engineering industries, defining project scope, services, and performance specifications. This application simplifies the handling, parsing, and analysis of these complex documents.
-
 ### Key Use Cases
 
 -   📄 **Document Processing**: Upload, parse, and analyze ONLV and JSON construction documents
@@ -588,5 +584,5 @@ See [COMMERCIAL LICENSING](#-commercial-licensing) section above for details.
 ---
 
 **Last Updated**: October 2024  
-**Version**: 1.0.0  
+**Version**: 1.4.6  
 **Status**: ✅ Active Development
