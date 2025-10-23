@@ -17,6 +17,7 @@ const CategorySearch = ({
     const [error, setError] = useState("");
 
     // Debounced search function
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     const debouncedSearch = useCallback(
         debounce(async (term) => {
             if (!term.trim()) {

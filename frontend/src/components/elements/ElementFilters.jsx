@@ -64,12 +64,6 @@ const ElementFilters = ({
         });
     };
 
-    const setMyElementsFilter = () => {
-        if (currentUser) {
-            handleFilterChange("userId", currentUser.id);
-        }
-    };
-
     const hasActiveFilters =
         filters.type ||
         filters.userId ||

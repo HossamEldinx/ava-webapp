@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useLocalization } from "../../contexts/LocalizationContext";
 import { API_ENDPOINTS } from "../../config/api";
 
@@ -10,6 +10,7 @@ const CreateNewPosition = () => {
     const [formType, setFormType] = useState(null); // "default" or "grundtextnr"
     const [nrExists, setNrExists] = useState(false);
     const [grundtextExists, setGrundtextExists] = useState(false);
+    // eslint-disable-next-line no-unused-vars
     const [grundtextData, setGrundtextData] = useState(null);
     const [isCheckingNr, setIsCheckingNr] = useState(false);
     const [isSubmitting, setIsSubmitting] = useState(false);

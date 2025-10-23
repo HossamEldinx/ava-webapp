@@ -4,7 +4,7 @@
 // When you open the modal to create something new, these functions provide the basic
 // shape of the data, with default values where needed, so the form knows what information to collect.
 
-import { einheitOptions } from "../OnlvEdit.jsx"; // We import a list of measurement units (like "meters" or "hours") from another file.
+import {} from "../OnlvEdit.jsx"; // We import a list of measurement units (like "meters" or "hours") from another file.
 
 // This function creates the starting data for a "Folgeposition" form.
 // A "Folgeposition" is like a sub-task or a variation of a main task (called "Grundtext").

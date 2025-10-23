@@ -1,9 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import {
-    searchRegulations,
     searchRegulationsUnified,
     formatRegulationDisplay,
-    getEntityTypeDisplayName,
 } from "../../services/regulationService";
 
 const RegulationSearch = ({
@@ -99,17 +97,6 @@ const RegulationSearch = ({
         onRegulationRemove(regulationId);
     };
 
-    const getRegulationBadgeColor = (entityType) => {
-        const colors = {
-            LG: "bg-blue-100 text-blue-800",
-            ULG: "bg-green-100 text-green-800",
-            Grundtext: "bg-yellow-100 text-yellow-800",
-            UngeteiltePosition: "bg-purple-100 text-purple-800",
-            Folgeposition: "bg-pink-100 text-pink-800",
-        };
-        return colors[entityType] || "bg-gray-100 text-gray-800";
-    };
-
     return (
         <div className="space-y-4">
             {/* Search Input */}
@@ -152,6 +139,7 @@ const RegulationSearch = ({
                 {showResults && searchResults.length > 0 && (
                     <div className="absolute z-10 mt-1 w-full bg-gray-800 border border-gray-600 rounded-md shadow-lg max-h-60 overflow-auto">
                         {searchResults.map((regulation) => {
+                            // eslint-disable-next-line no-unused-vars
                             const { identifier, displayText } =
                                 formatRegulationDisplay(regulation);
                             const isSelected = selectedRegulations.some(

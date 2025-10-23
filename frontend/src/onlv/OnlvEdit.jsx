@@ -15,7 +15,7 @@
 // Think of it as the "editor" part of the ONLV application, allowing users
 // to fine-tune the details of their construction project entries.
 
-import React, { useState, useCallback } from "react";
+import React, { useState } from "react";
 
 // --- Einheit Options (Unit Options) ---
 // This is a list of standard units of measurement that users can choose from.

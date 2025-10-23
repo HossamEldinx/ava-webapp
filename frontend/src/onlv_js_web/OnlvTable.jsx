@@ -51,7 +51,6 @@ import { useFiltering } from "./hooks/useFiltering"; // A custom hook that handl
 import { useEditModalManager } from "./hooks/useEditModalManager"; // A custom hook to manage the state of the "Edit Position" pop-up window.
 import { useFolgepositionModalManager } from "./hooks/useFolgepositionModalManager"; // A custom hook to manage the "Add Folgeposition" pop-up.
 import { usePositionInteractionManager } from "./hooks/usePositionInteractionManager"; // A custom hook to manage information about the currently selected position.
-import PositionInfoModal from "./PositionInfoModal"; // A pop-up window to show detailed information about a selected position.
 import {
     CreateNewEntryModal,
     useCreateNewEntryModalManager,
@@ -108,8 +107,6 @@ const OnlvHierarchicalViewer = ({
     const [isHeaderCollapsed, setIsHeaderCollapsed] = useState(true); // Is the main project header section collapsed?
     const [isImageCarouselCollapsed, setIsImageCarouselCollapsed] =
         useState(true); // Is the image carousel collapsed?
-    const [isPositionInfoModalOpen, setIsPositionInfoModalOpen] =
-        useState(false); // Is the detailed position info pop-up open?
     const [isFixedRulesCollapsed, setIsFixedRulesCollapsed] = useState(true); // Is the "Fixed Rules" section collapsed?
 
     // This hook manages the state for the flexible "ChangeBasedModal".
@@ -134,8 +131,6 @@ const OnlvHierarchicalViewer = ({
     const {
         selectedPositionInfo, // The data of the currently selected position.
         setSelectedPositionInfo, // A function to update the selected position.
-        positionInteractionHistory, // A history of positions the user has interacted with.
-        setPositionInteractionHistory, // A function to update the history.
     } = usePositionInteractionManager(onPositionDataUpdate);
 
     // This hook manages the pop-up window for editing an existing position.
@@ -891,9 +886,6 @@ const OnlvHierarchicalViewer = ({
                                                 }
                                                 setSelectedPositionInfo={
                                                     setSelectedPositionInfo
-                                                }
-                                                setPositionInteractionHistory={
-                                                    setPositionInteractionHistory
                                                 }
                                             />
                                         ))

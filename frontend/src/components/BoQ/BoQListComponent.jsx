@@ -30,6 +30,7 @@ const BoQListComponent = ({
         if (project) {
             fetchBoQs();
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [project]);
 
     useEffect(() => {
@@ -38,6 +39,7 @@ const BoQListComponent = ({
         } else {
             setFiles([]); // Clear files if no BOQ is selected
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [selectedBoQ]);
 
     const fetchBoQs = async () => {
@@ -202,33 +204,6 @@ const BoQListComponent = ({
             console.error("Load file error:", err);
             setError(
                 t("boq.failedToLoadFileWithMessage", { message: err.message })
-            );
-        }
-    };
-
-    const handleDownload = async (file) => {
-        try {
-            const response = await fetch(API_ENDPOINTS.FILES.DOWNLOAD(file.id));
-
-            if (!response.ok) {
-                throw new Error(
-                    t("boq.downloadFailed", { status: response.status })
-                );
-            }
-
-            const blob = await response.blob();
-            const url = window.URL.createObjectURL(blob);
-            const link = document.createElement("a");
-            link.href = url;
-            link.download = file.name;
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-            window.URL.revokeObjectURL(url);
-        } catch (err) {
-            console.error("Download error:", err);
-            setError(
-                t("boq.downloadFailedWithMessage", { message: err.message })
             );
         }
     };

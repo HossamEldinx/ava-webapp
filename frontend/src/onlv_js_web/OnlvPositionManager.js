@@ -17,10 +17,7 @@
 // It's super important because it keeps our project data organized and correct,
 // making sure everything follows the ONLV rules.
 
-import {
-    ungeteilteposition,
-    folgeposition as folgepositionTemplate,
-} from "../CommonData/Postions.js"; // We import some basic templates for different types of positions (tasks) from another file.
+import {} from "../CommonData/Postions.js"; // We import some basic templates for different types of positions (tasks) from another file.
 
 /**
  * This function is like a special assistant that helps us add a brand new task (called a "position")

@@ -69,7 +69,6 @@ function BoQPage({ onFileSelect, onNavigateToOnlvPage, currentUser }) {
     const [isCreateBoQModalOpen, setIsCreateBoQModalOpen] = useState(false); // New state for CreateBoQModal
     const [selectedProjectForBoQ, setSelectedProjectForBoQ] = useState(null); // New state for selected project for BOQ creation
     const [selectedBoQForUpload, setSelectedBoQForUpload] = useState(null); // New state for selected BOQ for upload
-    const [isHelpSectionOpen, setIsHelpSectionOpen] = useState(false); // State for help section visibility
     const [currentView, setCurrentView] = useState("projects"); // "projects", "boqs", or "analysis"
     const [selectedProjectForBoQList, setSelectedProjectForBoQList] =
         useState(null); // Project for which to show BOQs

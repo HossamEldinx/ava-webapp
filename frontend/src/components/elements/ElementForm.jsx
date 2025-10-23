@@ -177,25 +177,6 @@ const ElementForm = ({
         }
     };
 
-    const handleRegulationSelect = (regulation) => {
-        setSelectedRegulations((prev) => {
-            // Check if regulation is already selected
-            const isAlreadySelected = prev.some(
-                (selected) => selected.id === regulation.id
-            );
-            if (!isAlreadySelected) {
-                return [...prev, regulation];
-            }
-            return prev;
-        });
-    };
-
-    const handleRegulationRemove = (regulationId) => {
-        setSelectedRegulations((prev) =>
-            prev.filter((regulation) => regulation.id !== regulationId)
-        );
-    };
-
     // Format position number for display (e.g., "001101G")
     const formatPositionNumber = (regulation) => {
         const parts = [];

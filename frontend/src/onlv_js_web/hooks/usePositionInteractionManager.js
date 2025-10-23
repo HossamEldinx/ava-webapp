@@ -82,12 +82,6 @@ export const usePositionInteractionManager = (onPositionDataUpdate) => {
                 }
             } else {
                 // If it's a regular position, we save its details.
-                const { grundtextnr, lgNr, ulgNr, ftnrList, lastFtnr } =
-                    selectedPositionInfo;
-                if (ftnrList && ftnrList.length > 0) {
-                    // This is a placeholder for any future logic related to Folgepositionen (sub-positions).
-                }
-
                 try {
                     localStorage.setItem(
                         "lastSelectedPosition",

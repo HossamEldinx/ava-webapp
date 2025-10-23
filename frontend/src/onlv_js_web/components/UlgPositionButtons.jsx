@@ -5,8 +5,7 @@
 // This component manages its own state for the modal (whether it's open or closed) and which type of position is being created.
 // It works closely with the `AddPositionModal` component, which is the actual pop-up form.
 
-import React, { useState, useCallback } from "react"; // We need React to build the component. `useState` is a hook to manage component-level state (like if the modal is open). `useCallback` is a hook to optimize functions so they don't get recreated on every render.
-import { FaPlus, FaShareAlt } from "react-icons/fa"; // We import icons to make our buttons look nice. `FaPlus` is a plus sign, and `FaShareAlt` is a share icon.
+import React, { useState } from "react"; // We need React to build the component. `useState` is a hook to manage component-level state (like if the modal is open).
 import AddPositionModal from "./AddPositionModal.jsx"; // This imports the modal component that will be shown when a button is clicked.
 
 // This is our main component. It's a functional component that takes two "props" (properties) from its parent.
@@ -22,35 +21,33 @@ const UlgPositionButtons = ({
     const [positionType, setPositionType] = useState(null);
 
     // --- Functions to Handle User Actions ---
-    // `useCallback` is an optimization. It ensures that these functions are not recreated every time the component re-renders, which can improve performance.
 
     // This function is called when the user wants to add a "standalone" position.
-    const openStandaloneModal = useCallback(() => {
+    // eslint-disable-next-line no-unused-vars
+    const openStandaloneModal = () => {
         setPositionType("standalone"); // We set the type of position to "standalone".
         setIsModalOpen(true); // We set the modal state to `true`, which will make it appear on the screen.
-    }, []); // The empty array `[]` means this function never needs to be recreated.
+    };
 
     // This function is called when the user wants to add a "shared" base position.
-    const openSharedModal = useCallback(() => {
+    // eslint-disable-next-line no-unused-vars
+    const openSharedModal = () => {
         setPositionType("shared"); // Set the type to "shared".
         setIsModalOpen(true); // Open the modal.
-    }, []);
+    };
 
     // This function is called to close the modal.
-    const closeModal = useCallback(() => {
+    const closeModal = () => {
         setIsModalOpen(false); // Hide the modal.
         setPositionType(null); // Reset the position type, so we're ready for the next time.
-    }, []);
+    };
 
     // This function is called when the user clicks "Save" inside the modal.
-    const handleSavePosition = useCallback(
-        (newPosition) => {
-            // `newPosition` is the data that the user entered in the modal form.
-            onAddPosition(newPosition); // We call the function from our parent to actually add the new position to the main data.
-            closeModal(); // After saving, we close the modal.
-        },
-        [onAddPosition, closeModal] // This function depends on `onAddPosition` and `closeModal`. If they change, this function will be recreated.
-    );
+    const handleSavePosition = (newPosition) => {
+        // `newPosition` is the data that the user entered in the modal form.
+        onAddPosition(newPosition); // We call the function from our parent to actually add the new position to the main data.
+        closeModal(); // After saving, we close the modal.
+    };
 
     // The `return` statement describes what the component renders to the screen.
     return (

@@ -176,7 +176,6 @@ const CreateNewEntryModal = ({
     const [nrExistsMessage, setNrExistsMessage] = useState(null); // State for NR existence warning
 
     // State for change detection
-    const [changeDetector] = useState(() => new CreateOnlvChangeDetector());
     const [changeInfo, setChangeInfo] = useState(null);
     const [validationInfo, setValidationInfo] = useState(null);
     const [previousValue, setPreviousValue] = useState("");
@@ -598,6 +597,7 @@ const CreateNewEntryModal = ({
                 changedtype: sessionCumulativeChangeTypes,
             }));
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [sessionCumulativeChangeTypes]);
 
     const handleSave = () => {

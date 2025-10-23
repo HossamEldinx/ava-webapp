@@ -564,7 +564,8 @@ const UlgItem = ({ ulg, lgNr }) => {
 
 // --- LG Item Component ---
 // Displays an "lg" item, making it collapsible. Contains ULG items.
-const LgItem = ({ lg, index }) => {
+// eslint-disable-next-line no-unused-vars
+const LgItem = ({ lg }) => {
     const [isOpen, setIsOpen] = useState(false);
     // State for Vorbemerkung visibility, initialized to false (collapsed)
     const [showVorbemerkung, setShowVorbemerkung] = useState(false); // Initialize to false for collapsed state by default
@@ -982,10 +983,7 @@ function flattenData(data) {
             });
             const grundtextList = ulg.positionen?.grundtextnr || [];
             grundtextList.forEach((gt, idx) => {
-                const gtId = `gt-${lg["@_nr"] || 0}-${ulg["@_nr"] || 0}-${
-                    gt["@_nr"] || idx
-                }`;
-                // For GrundtextNr items (level 2), format the display number as "LG_NRULG_NRGT_NR"
+                // Format the display number for GrundtextNr (level 2) as "LG_NRULG_NRGT_NR"
                 const formattedGtNr = formatNumber(gt["@_nr"] || idx, 2);
                 // The grundtextnr row itself is "escaped" and its children are displayed instead.
                 // Therefore, we do not push the grundtextnr row to the 'rows' array.

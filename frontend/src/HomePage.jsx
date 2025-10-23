@@ -11,7 +11,6 @@ function HomePage({
     const [isModalOpen, setIsModalOpen] = useState(false);
     const { t } = useLocalization();
 
-    const openModal = () => setIsModalOpen(true);
     const closeModal = () => setIsModalOpen(false);
 
     const cardClasses =

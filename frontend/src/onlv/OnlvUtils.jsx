@@ -310,7 +310,7 @@ export const getDisplayNr = (item, flatData, parentMap) => {
                             rawFtnrString.match(duplicationPattern);
 
                         if (duplicationMatch) {
-                            const [_, baseNumber, ftnrPart] = duplicationMatch;
+                            const [, baseNumber, ftnrPart] = duplicationMatch;
                             return `${baseNumber}${ftnrPart}`;
                         }
 
@@ -356,12 +356,8 @@ export const getDisplayNr = (item, flatData, parentMap) => {
                         const match = rawFtnrString.match(numberPattern);
 
                         if (match) {
-                            const [
-                                _,
-                                existingUlgPrefix,
-                                existingGrundtextNr,
-                                existingFtnr,
-                            ] = match;
+                            const [, , existingGrundtextNr, existingFtnr] =
+                                match;
                             // We trust the ULG number from our hierarchy but use the other parts from the item itself.
                             const result = `${ulgNrString}.${existingGrundtextNr}${existingFtnr}`;
                             return result;

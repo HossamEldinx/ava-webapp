@@ -13,12 +13,9 @@
 // and a position number, then calls a function (`onSave`) to add the new position
 // to the main project data.
 
-import React, { useState, useCallback, useEffect } from "react"; // We need React to build our user interface, and hooks like useState for managing data.
+import React, { useState } from "react"; // We need React to build our user interface, and hooks like useState for managing data.
 import { v4 as uuidv4 } from "uuid"; // This is a special tool that helps us create unique identification numbers (IDs) for each new position.
-import {
-    ungeteilteposition, // This imports a template for a specific type of position called "ungeteilteposition" (undivided position).
-    folgeposition as folgepositionTemplate, // This imports a template for "folgeposition" (sub-position), but it's currently not used for adding new positions in this modal.
-} from "../../CommonData/Postions.js"; // These templates come from a file that defines common position structures.
+import {} from "../../CommonData/Postions.js"; // These templates come from a file that defines common position structures.
 
 /**
  * This is our main pop-up window component for adding new positions.

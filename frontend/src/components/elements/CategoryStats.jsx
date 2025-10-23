@@ -30,6 +30,7 @@ const CategoryStats = ({
 
     useEffect(() => {
         loadStats();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [currentUser, refreshTrigger]);
 
     const loadStats = async () => {

@@ -137,6 +137,7 @@ const ElementList = ({
                 setIsInitialLoad(false);
             }
         },
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         [
             filters.userId,
             filters.type,
@@ -170,11 +171,12 @@ const ElementList = ({
                 return aValue > bValue ? 1 : -1;
             }
         });
-    }, []); // No dependencies as it's a pure sorting function
+    }, []);
 
     // Initial load - only trigger when filters change or refresh is triggered
     useEffect(() => {
         loadElements(1, pagination.limit);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [loadElements, refreshTrigger]);
 
     // Show loading skeleton only on initial load or when we have no elements

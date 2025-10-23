@@ -16,7 +16,7 @@
 // By creating this hook, we can reuse this logic in any component that needs to manage expandable rows,
 // keeping our code clean and organized.
 
-import { useState, useCallback, useEffect } from "react"; // We import some basic tools from React.
+import { useState, useCallback } from "react"; // We import some basic tools from React.
 
 // `useState`: This is one of the most important React hooks. It lets our component have its own "state" or "memory." We use it to remember which rows are currently expanded.
 // `useCallback`: This is a performance hook. It helps us prevent functions from being recreated every time our component updates. This can make the app run faster, especially with complex tables.

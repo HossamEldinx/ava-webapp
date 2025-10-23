@@ -155,6 +155,7 @@ const CategoryList = ({ currentUser = null }) => {
     // Initial load - only trigger when filters change or refresh is triggered
     useEffect(() => {
         loadCategories(1, pagination.limit);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [loadCategories, refreshTrigger]);
 
     // Show loading skeleton only on initial load or when we have no categories

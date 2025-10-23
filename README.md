@@ -552,7 +552,7 @@ chmod +x deploy.sh
 ```
 MIT License (with Commercial Restrictions)
 
-Copyright (c) 2024
+Copyright (c) 2025
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -583,6 +583,6 @@ See [COMMERCIAL LICENSING](#-commercial-licensing) section above for details.
 
 ---
 
-**Last Updated**: October 2024  
+**Last Updated**: October 2025  
 **Version**: 1.4.6  
 **Status**: ✅ Active Development

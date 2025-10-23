@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useCallback } from "react";
 import { useLocalization } from "./contexts/LocalizationContext";
 import { API_ENDPOINTS } from "./config/api";
 
@@ -20,6 +20,7 @@ const PromptTestingPage = ({ selectedPrompt = null }) => {
     const [enableCostData, setEnableCostData] = useState(false); // Enable cost claims database access
     const [enablePositionData, setEnablePositionData] = useState(false); // Enable regulations database access
     const [selectedFile, setSelectedFile] = useState(null); // Selected file for upload
+    // eslint-disable-next-line no-unused-vars
     const [isUploading, setIsUploading] = useState(false); // File upload state
 
     // UI state management
@@ -81,86 +82,6 @@ const PromptTestingPage = ({ selectedPrompt = null }) => {
 
             setSelectedFile(file);
             setErrorMessage("");
-        }
-    };
-
-    const handleFileUpload = async () => {
-        if (!selectedFile) return;
-
-        // Create session if it doesn't exist
-        let sessionId = currentSessionId;
-        if (!sessionId) {
-            sessionId = await createChatSession();
-            if (!sessionId) {
-                return; // Failed to create session
-            }
-        }
-
-        setIsUploading(true);
-        setErrorMessage("");
-
-        try {
-            const formData = new FormData();
-            formData.append("file", selectedFile);
-            formData.append("session_id", sessionId);
-            formData.append("message", userInput || ""); // Include any user message
-
-            const response = await fetch(
-                API_ENDPOINTS.AI_TRAINING.SEND_MESSAGE_WITH_FILE,
-                {
-                    method: "POST",
-                    body: formData,
-                }
-            );
-
-            if (!response.ok) {
-                throw new Error(
-                    `Failed to upload file: ${response.statusText}`
-                );
-            }
-
-            const result = await response.json();
-
-            if (result.success) {
-                // Add the AI response to chat history
-                setChatHistory((prev) => [
-                    ...prev,
-                    {
-                        role: "assistant",
-                        content: result.response,
-                        model: result.model_used,
-                        timestamp: result.timestamp,
-                        fileProcessed: true,
-                    },
-                ]);
-
-                // Clear the selected file and user input
-                setSelectedFile(null);
-                setUserInput("");
-                if (fileInputRef.current) {
-                    fileInputRef.current.value = "";
-                }
-            } else {
-                throw new Error(result.error || "Failed to process file");
-            }
-        } catch (error) {
-            console.error("Error uploading file:", error);
-            setErrorMessage(
-                t("ai_training.promptTesting.messages.errors.uploadFile") +
-                    error.message
-            );
-
-            // Add error message to chat
-            setChatHistory((prev) => [
-                ...prev,
-                {
-                    role: "assistant",
-                    content: `Error processing file: ${error.message}`,
-                    error: true,
-                },
-            ]);
-        } finally {
-            setIsUploading(false);
         }
     };
 
@@ -247,7 +168,7 @@ const PromptTestingPage = ({ selectedPrompt = null }) => {
                 );
             }
 
-            const result = await response.json();
+            await response.json();
 
             setSuccessMessage(
                 selectedPrompt && selectedPrompt.id
@@ -271,7 +192,7 @@ const PromptTestingPage = ({ selectedPrompt = null }) => {
     };
 
     // Handle form reset
-    const handleReset = () => {
+    const handleReset = useCallback(() => {
         // Delete current chat session if it exists
         if (currentSessionId) {
             fetch(API_ENDPOINTS.AI_TRAINING.DELETE_SESSION(currentSessionId), {
@@ -297,7 +218,7 @@ const PromptTestingPage = ({ selectedPrompt = null }) => {
         setUserInput("");
         setEnableCostData(false);
         setEnablePositionData(false);
-    };
+    }, [currentSessionId]);
 
     useEffect(() => {
         if (selectedPrompt && selectedPrompt.id) {
@@ -314,7 +235,7 @@ const PromptTestingPage = ({ selectedPrompt = null }) => {
             setIsEditMode(false);
             handleReset();
         }
-    }, [selectedPrompt]);
+    }, [selectedPrompt, handleReset]);
 
     // Create a new AI chat session
     const createChatSession = async () => {

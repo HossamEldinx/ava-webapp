@@ -17,7 +17,6 @@ const CategoryForm = ({
         user_id: currentUser?.id || "",
     });
     const [errors, setErrors] = useState({});
-    const [isCheckingName, setIsCheckingName] = useState(false);
 
     const isEditMode = !!category;
 

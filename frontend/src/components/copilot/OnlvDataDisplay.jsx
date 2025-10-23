@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import OnlvTableWrapper from "../../onlv_js_web/OnlvTable"; // Import the wrapped table component
 
 function OnlvDataDisplay({

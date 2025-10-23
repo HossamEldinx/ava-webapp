@@ -13,8 +13,7 @@
 // When the user fills out the form and clicks "Save," the new Folgeposition
 // data is passed back to the main application to be added to the ONLV project structure.
 
-import React, { useState, useCallback, useEffect } from "react";
-import { v4 as uuidv4 } from "uuid"; // This helps us create unique IDs for things, like a special code for each new item.
+import React, { useState, useEffect } from "react";
 import { folgeposition as folgepositionTemplate } from "../../CommonData/Postions.js"; // This imports a basic structure (a "template") for a new Folgeposition. It's like a blank form we fill out.
 
 /**
@@ -138,21 +137,6 @@ const AddFolgepositionModal = ({ grundtextPosition, onClose, onSave }) => {
                 },
             }));
         }
-    };
-
-    // This function is for handling changes to checkbox inputs.
-    const handleCheckboxChange = (e) => {
-        const { name, checked } = e.target; // We get the name of the checkbox and whether it's checked or not.
-        // We set the value to "W" or "V" based on the checkbox name and its checked status.
-        const value = name === "wesentlicheposition" ? "W" : "V";
-
-        setFolgepositionData((prev) => ({
-            ...prev,
-            "pos-eigenschaften": {
-                ...prev["pos-eigenschaften"],
-                [name]: checked ? value : "", // If checked, set the value; otherwise, set it to empty.
-            },
-        }));
     };
 
     // This function is called when the user selects a different "Position Type" from the dropdown.
