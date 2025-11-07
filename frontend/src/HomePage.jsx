@@ -23,7 +23,7 @@ function HomePage({
         <div className="min-h-screen bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center">
             <div className="max-w-4xl mx-auto text-center mb-12">
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight">
-                    {t("homepage.title")}
+                    AVA-Software 2.0
                 </h1>
                 <p className="mt-4 text-lg sm:text-xl text-gray-300">
                     {t("homepage.subtitle")}

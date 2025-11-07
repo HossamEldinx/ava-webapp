@@ -1,6 +1,6 @@
 {
     "title": "Construction Document Management",
-    "subtitle": "Efficiently manage and process your construction projects and documents.",
+    "subtitle": "Upload quantity lists and automatically generate BoQ positions.",
     "boq": {
         "title": "Bill of Quantities",
         "description": "Manage and analyze your project's Bill of Quantities with ease. Upload, track, and process all your BoQ files in one place.",
